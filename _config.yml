@@ -23,7 +23,7 @@ sass:
 # Site Data
 url: # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
-title: Copyright (c) 2024 Ma Tao 
+title: My blogs 
 description: "I talk to God, and that's faith; God talks to me, huh, I must be crazy."
 keywords: 'jekyll,theme,gem-based,blog'
 author:
@@ -50,6 +50,7 @@ home:
   section1: <h1>Hi! This is Collapsar.</h1>
   section2: <h2>Welcome to my homepage!</h2>
   section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/Metricfield" title="View on GitHub"></a></div>
+  section4: <div class="social-links"><a class="ico-github btn" href="https://github.com/Metricfield" title="View on GitHub"></a></div>
 blog:
   cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
   cc_license_image: /assets/images/theme/cc-by-sa.png # An image of your CC License. 
