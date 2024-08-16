@@ -6,8 +6,6 @@ order: 4
 <div class="box-tip" markdown="1">
 <div class="title"> Robert Frost </div>
 Two roads diverged in woods, I took the one less traveled by.
-<br><br>
-并非所有流浪者都迷失了自我。
 </div>
 
 Here is **Ma Tao (Metricfield)**.Welcome to my page!
