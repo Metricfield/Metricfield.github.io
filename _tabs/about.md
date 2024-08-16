@@ -17,7 +17,7 @@ Here is **Ma Tao (Metricfield)**.
 
 ## Academic Background
 
-- **Sep 2024 - Future：** Institute of Theoretical Physics,Chinese Academy of Sciences(Theoreical Physics)[https://itp.cas.cn/]
+- **Sep 2024 - Future：** Institute of Theoretical Physics,Chinese Academy of Sciences(Theoreical Physics)(https://itp.cas.cn/)
 - **Oct 2020 - June 2024:** Nanjing Tech University (BSc,Applied Physics)
 
 
