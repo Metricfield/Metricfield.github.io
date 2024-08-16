@@ -3,14 +3,12 @@
 icon: fas fa-info-circle
 order: 4
 ---
-
-<div class="box-info" markdown="1">
-<div class="title"> J.R.R.TOLKIEN</div>
+<div class="box-tip" markdown="1">
+<div class="title"> J.R.R.TOLKIEN </div>
 Not all those who wander are lost.
 <br><br>
 并非所有流浪者都迷失了自我。
 </div>
-
 
 Here is **Ma Tao (Metricfield)**.Welcome to my page!
 
@@ -18,8 +16,12 @@ Here is **Ma Tao (Metricfield)**.Welcome to my page!
 
 ## Academic Background
 
-- **Sep 2024 - Future：** [Institute of Theoretical Physics,Chinese Academy of Sciences](https://itp.cas.cn/) (Theoreical Physics)
-- **Oct 2020 - June 2024:** Nanjing Tech University (BSc,Applied Physics)
+- **Sep 2024 - Future：** 
+
+ [Institute of Theoretical Physics,Chinese Academy of Sciences](https://itp.cas.cn/) (Theoreical Physics)
+- **Oct 2020 - June 2024:** 
+
+ Nanjing Tech University (BSc,Applied Physics)
 
 
 ---
