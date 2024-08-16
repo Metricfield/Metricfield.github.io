@@ -16,7 +16,7 @@ timezone:
 
 title: Metricfield # the main title
 
-tagline: My personal page. # it will display as the sub-title
+tagline: Two roads diverged in woods, I took the one less traveled by. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
