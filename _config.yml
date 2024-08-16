@@ -43,10 +43,12 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
+    - https://www.zhihu.com/people/xin-bi-tian-gao-25-14
+    - https://space.bilibili.com/631515568?spm_id_from=333.999.0.0
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
+  google:google-site-verification=PEPeRx_9cFlCXU3g-PmGJOZ1h9xocgCcY7g1WGtA39k # fill in your Google verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
