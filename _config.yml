@@ -106,7 +106,7 @@ social_preview_image: # string, local or CORS resources
 #"https://cdn.jsdelivr.net/gh/Metricfield/Metricfield.github.io@main/assets/img/avatar.jpg"
 # boolean type, the global switch for TOC in posts.
 toc: true
-
+backgroud_animation: true
 comments:
   # Global switch for the post comment system. Keeping it empty means disabled.
   provider:  # [disqus | utterances | giscus]
