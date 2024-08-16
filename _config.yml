@@ -48,7 +48,7 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google:google-site-verification=PEPeRx_9cFlCXU3g-PmGJOZ1h9xocgCcY7g1WGtA39k # fill in your Google verification code
+  google: google-site-verification=PEPeRx_9cFlCXU3g-PmGJOZ1h9xocgCcY7g1WGtA39k # fill in your Google verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
