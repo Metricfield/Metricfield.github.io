@@ -8,17 +8,18 @@ order: 4
 Two roads diverged in woods, I took the one less traveled by.
 </div>
 
-Here is **Ma Tao (Metricfield)**.Welcome to my page!
+---
+Here is **Ma Tao (Metricfield)**.Welcome to my homepage!
 
 
 
 ## Academic Background
 
 - **Sep 2024 - Future：** 
- [Institute of Theoretical Physics, Chinese Academy of Sciences](https://itp.cas.cn/) (Theoretical Physics)
+ [Institute of Theoretical Physics, Chinese Academy of Sciences](https://itp.cas.cn/) (Theoretical Physics).
 
 - **Oct 2020 - June 2024:** 
- Nanjing Tech University (BSc,Applied Physics)
+ Nanjing Tech University (BSc,Applied Physics).
 
 
 ---
