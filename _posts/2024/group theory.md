@@ -2,7 +2,7 @@
 title:      "Summary of Group Theory"
 date:       2024-08-17
 categories: [Mathematics, Algebra]
-tag: [Group t、Theory]
+tag: [Group Theory]
 toc: false
 description: This blog mainly records the notes I took while studying group theory, covering topics such as finite groups, Lie groups, and their representations.
 ---
