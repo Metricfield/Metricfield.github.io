@@ -52,7 +52,9 @@ description: This article records the content of differential geometry from the 
 
 > 规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
 
- $ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离定义为 $$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
+ $ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离定义为 
+ 
+ $$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
 
 ##### 映射
    
