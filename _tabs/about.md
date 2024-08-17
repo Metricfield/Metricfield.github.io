@@ -23,8 +23,7 @@ Here is **Ma Tao (Metricfield)**.Welcome to my page!
 ## Research Interests
 
 
-- [Eugenio Del Nobile,A hands-on manual on the theory
-of direct Dark Matter detection]
+- Eugenio Del Nobile,A hands-on manual on the theory of direct Dark Matter detection
 
 
 
