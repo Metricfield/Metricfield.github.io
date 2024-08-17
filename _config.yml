@@ -15,7 +15,9 @@ timezone: Asia/Shanghai
 # ↓ --------------------------
 
 
-comments.active
+comments:
+  active: true
+
 
 title: Metricfield # the main title
 
