@@ -1,28 +1,23 @@
-#  The contact options.
+
+
+# _data/contact.yml
 
 - type: github
-  icon: "fab fa-github"
-
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+  icon: fab fa-github
+  url: https://github.com/Metricfield
 
 - type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+  icon: fas fa-envelope
+  url: mailto:matao24@mails.ucas.ac.cn
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
-# - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-#
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+- type: zhihu
+  icon: fab fa-zhihu
+  url: https://www.zhihu.com/people/xin-bi-tian-gao-25-14
+
+- type: bilibili
+  icon: fab fa-bilibili
+  url: https://space.bilibili.com/631515568?spm_id_from=333.999.0.0
+
+- type: qq
+  icon: fas fa-comment
+  url: tencent://message/?uin=2904874504
