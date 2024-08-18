@@ -89,10 +89,12 @@ description: This article records the content of differential geometry from the 
 - 非空集合 $ X,Y $ 的**卡氏积**(Cartesian product) $ X\times Y $ 定义为 
 $$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$ 
    
-- 有限个集合的卡氏积可以定义为: $$ X\times Y\times Z:=\{(x,y,z)|x\in X,y\in Y,z\in Z\}. $$ 
+- 有限个集合的卡氏积可以定义为: $$ X \times Y \times Z := \{(x,y,z)\mid x \in X,y \in Y,z \in Z \}. $$ 
 
->规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
-{: .prompt-info }
+-规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
+
+> 实际上卡氏积就是对集合内的多个元素按照一定顺序打包封装而已,并未对元素进行处理.
+{: .prompt-warning }
 
 - 定义$ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离为 
  $$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
