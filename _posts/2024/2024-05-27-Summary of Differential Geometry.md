@@ -87,7 +87,7 @@ description: This article records the content of differential geometry from the 
 #### 卡氏积
 
 - 非空集合 $ X,Y $ 的**卡氏积**(Cartesian product) $ X\times Y $ 定义为 
-$$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$ 
+$$ X\times Y:=\{(x,y)\midx\in X,y\in Y\}. $$ 
    
 - 有限个集合的卡氏积可以定义为: $$ X \times Y \times Z := \{(x,y,z)\mid x \in X,y \in Y,z \in Z \}. $$ 
 
@@ -97,45 +97,47 @@ $$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$
 {: .prompt-warning }
 
 - 定义$ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离为 
- $$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
+ $$ \midy-x\mid:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
 
 #### 映射
    
 - 设集合 $ X,Y $ 非空.一个从 $ X $ 到 $ Y $ 的映射是一个法则,它给 $ X $ 的每一元素指定 $ Y $ 的唯一对应元素.若 $ y\in Y $ 是 $ x\in X $ 的对应元素,就写 $ y=f(x) $ ,并称 $ y $ 为 $ x $ 在映射 $ f $ 下的**像**(image),称 $ x $ 为**原像**或者逆像(inverse image). $ X $ 称为映射 $ f $ 的**定义域**(domain), $ X $ 的全体元素在映射 $ f $ 下的像的集合 $ f[x] $ 称为映射 $ f:X\to Y $ 的**值域**(range).
 
-> 映射天生就要求 $ x\in X $ 的对应物 $ y \in Y $是唯一.至于是一对一还是多对一那不管,这也为下面细分映射类型埋下伏笔.
-> 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),丘维生教授在国内首先将其译作“培域”.显然, 
+> 映射的定义只要求 $ \forall x\in X,x\mapsto y\in Y $ 必须唯一,而无论到底是“一对一”还是“多对一”,也不论 $ Y $ 中是不是有元素剩余.于是可以继续对映射加以限制从而进一步分类.
+> 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),北京大学丘维生教授在国内首先将其译作“培域”.显然, 
 $f[x] \subset Y .$
 {: .prompt-warning }
 
+- 映射 $ f:X\to Y $ 和 $ f':X\to Y $ 称为相等的,若 $ \forall x\in X,f(x)=f'(x) .$ 
 
+- 设 $ A \subset X, $ 则 $ A $ 的元素在 $ f $ 下的像组成的子集记作 $ f[A] $ ,即 
+ $$ f[A] \equiv \{ y \in Y \mid \exists x \in A,y=f(x) \} \subset Y.$$ 
 
-映射 $ f:X\to Y $ 和 $ f':X\to Y $ 称为相等的,若 $ \forall x\in X,f(x)=f'(x) $ .
+- 映射的分类
+  
+1. 映射 $ f:X\to Y $ 称为**一一的**(one-to-one),若 $ \forall y \in Y $ ,有不多于一个逆像,可以一个也没有.
 
- 设 $ A\subset X, $ 则 $ A $ 的元素在 $ f $ 下的像组成的子集记作 $ f[A] $ ,即 
- $ f[A] \equiv \{ y \in Y | \exists x \in A,y=f(x) \} \subset Y.$ 
+> 亦即排除了“多对一”的映射.数学书称一一映射为单射.
+{: .prompt-warning }
+  
+  - 若 $ f $ 为一一映射,则存在逆映射 $ f^{-1}: f[X] \to X $ .无论 $ f:X\to Y $ 是否有逆,都可以定义任一子集 $ B \subset Y $ 在 $ f $ 下的逆像 $ f^{-1}[B] $ 为: $$ f^{-1}[B]:=\{x\in X\midf(x)\in B\}\subset X. $$ 这里的逆像是 $ X $ 的子集而非元素.
 
-> 映射的定义只要求 $ \forall x\in X,x\mapsto y\in Y $ 必须唯一,而无论到底是“一对一”还是“多对一”,也不论 $ Y $ 中是不是有元素“剩余”.于是可以继续对映射加以限制从而进一步分类.
- 
-- 映射 $ f:X\to Y $ 称为**一一的(one-to-one)**,若 $ \forall y \in Y $ ,有不多于一个逆像(可以没有).
+2. 映射 $ f:X\to Y $ 称为**到上的**(onto),若 $ \forall y \in Y $ ,都有逆像,可以多于一个. $ f $ 为到上映射的充要条件是值域 $ f[X]=Y $ .
 
-> 亦即排除了“多对一”的映射.数学书称一一映射为**单射**.
+> 数学书称到上映射为**满射**.
+{: .prompt-warning }
 
-  若 $ f $ 为一一映射,则存在逆映射 $ f^{-1}:f[X]\to X $ .无论 $ f:X\to Y $ 是否有逆,都可以定义任一子集 $ B\subset Y $ 在 $ f $ 下的逆像 $ f^{-1}[B] $ 为: $ f^{-1}[B]:=\{x\in X|f(x)\in B\}\subset X. $ 这里的逆像是 $ X $ 的子集而非元素.
+3. 既是一一映射,又是到上映射,则称为一一到上的映射,数学上称为双射或者一一对应.
 
-- 映射 $ f:X\to Y $ 称为**到上的(onto)**,若 $ \forall y \in Y $ ,都有逆像(可以多于一个). $ f $ 为到上映射的充要条件是值域 $ f[X]=Y $ .
- 
->数学书称到上映射为**满射**.
-既是单射,又是满射,则称为双射或者一一对应.
-
--  $ f:X\to Y $ 称为常值映射,若 $ \forall x,x'\in X,f(x)=f(x') $ .
-- 设 $ X,Y,Z $ 为集合, $ f:X\to Y,g:Y\to Z $ 为映射,则 $ f $ 和 $ g $ 的复合映射 $ g\circ f $ 是从 $ X $ 到 $ Z $ 的映射,定义为 $ (g \circ f)(x):=g(f(x))\in Z,\forall x \in X $ .
+4. $ f:X\to Y $ 称为常值映射,若 $ \forall x,x'\in X,f(x)=f(x') $ .
+5. 设 $ X,Y,Z $ 为集合, $ f:X\to Y,g:Y\to Z $ 为映射,则 $ f $ 和 $ g $ 的复合映射 $ g\circ f $ 是从 $ X $ 到 $ Z $ 的映射,定义为 
+  $$ (g \circ f)(x):=g(f(x))\in Z,\forall x \in X $$ .
 
 #### 一元函数 $ f:\mathbb{R}\to \mathbb{R} $ 连续性的两种定义
 
 微积分采用 $ \varepsilon-\delta $ 语言定义,即
 
-称 $ f $ 在 $ x $ 点连续,若 $ \forall \varepsilon >0,\exists\ \delta >0 $ 使得当 $ |x'-x|<\delta $ 时有 $ |f(x')-f(x)|<\varepsilon $ .
+称 $ f $ 在 $ x $ 点连续,若 $ \forall \varepsilon >0,\exists\ \delta >0 $ 使得当 $ \midx'-x\mid<\delta $ 时有 $ \midf(x')-f(x)\mid<\varepsilon $ .
 
 称 $ f $ 在 $ \mathbb{R} $ 上是连续的,若它在 $ \mathbb{R} $ 的任一点连续.
 
@@ -194,17 +196,17 @@ $f[x] \subset Y .$
 3. 设 $ X=\mathbb{R} $ ,则 $ \mathscr{T}_u:=\{\text{空集或者}\mathbb{R}\text{中能够表示为开区间之并的子集}\} $ 称为 $ \mathbb{R} $ 的**通常拓扑**.\
   设 $ X=\mathbb{R}^n $ ,则 $ \mathscr{T}_u:=\{\text{空集或者}\mathbb{R}^n\text{中能够表示为开球之并的子集}\} $ 称为 $ \mathbb{R}^n $ 的**通常拓扑**.
   
-  > 其中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n||x-x_0|<r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.\
+  > 其中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n\mid\midx-x_0\mid<r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.\
   >  $ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
   
-4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 \$\$ \mathscr{T}:=\{O\subset X|O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{T}_2\} \$\$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑(product topology)**.
+4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 \$\$ \mathscr{T}:=\{O\subset X\midO\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{T}_2\} \$\$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑(product topology)**.
 5. 设 $ (X,\mathscr{T}) $ 是拓扑空间, $ A $ 为 $ X $ 的任一非空子集.把 $ A $ 看成集合,指定拓扑 $ \mathscr{S} $ 为 \$\$ 
-\mathscr{S}:=\{V\subset A|\exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \$\$ 
+\mathscr{S}:=\{V\subset A\mid\exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \$\$ 
 这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑(induced topology).**  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间(topological subspace)**.
 
 >
 ![](诱导拓扑.jpg)\
-如上图所示,设 $ A:=\{x\in\mathbb{R}^2\mid |x-x_0|=1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
+如上图所示,设 $ A:=\{x\in\mathbb{R}^2\mid \midx-x_0\mid=1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
 
 #### 连续
 
@@ -407,17 +409,17 @@ $f[x] \subset Y .$
 映射 $ v:\mathscr{F}_M\to\mathbb{R} $ 称为点 $ p\in M $ 的一个**矢量(vector)**,若 $ \forall f,g\in\mathscr{F}_M,\alpha,\beta\in \mathbb{R} $ 有
 
 1. (线性性)  $ v(\alpha f+\beta g)=\alpha v(f)+\beta v(g) $ .
-2. (莱布尼茨律)  $ v(fg)=f|_pv(g)+g|_pv(f) $ ,其中 $ f|_p $ 代表函数 $ f $ 在 $ p $ 点的值,亦可以记作 $ f(p) $ .
+2. (莱布尼茨律)  $ v(fg)=f\mid_pv(g)+g\mid_pv(f) $ ,其中 $ f\mid_p $ 代表函数 $ f $ 在 $ p $ 点的值,亦可以记作 $ f(p) $ .
 
 设 $ (O,\psi) $ 是坐标系,其坐标为 $ x^\mu $ ,则 $ M $ 上任一光滑函数 $ f\in \mathscr{F}_M $ 与
  $ (O,\psi) $ 结合得到 $ n $ 元函数 $ F(x^1,\cdots,x^n) $ ,借此可以给 $ O $ 中任一点 $ p $ 定义 $ n $ 个矢量,记作 $ X_\mu,\mu=1,\cdots,n $ ,它们作用于任一  $ f\in\mathscr{F}_M $ 定义为:
- \$\$ X_\mu(f):=\left.\dfrac{\partial F(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\left.\dfrac{\partial f(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\left.\dfrac{\partial f(x)}{\partial x^\mu}\right|_p,\forall f\in\mathscr{F}_M \$\$ 
+ \$\$ X_\mu(f):=\left.\dfrac{\partial F(x^1,\cdots,x^n)}{\partial x^\mu}\right\mid_p=\left.\dfrac{\partial f(x^1,\cdots,x^n)}{\partial x^\mu}\right\mid_p=\left.\dfrac{\partial f(x)}{\partial x^\mu}\right\mid_p,\forall f\in\mathscr{F}_M \$\$ 
 
 设 $ M $ 的维数为 $ n $ ,以 $ V_p $ 代表 $ M $ 中 $ p $ 点所有矢量的集合,则 $ V_p $ 是 $ n $ 维向量空间.
 
 坐标域内任一点 $ p $ 的 $ \{X_1,\cdots,X_n\} $ 称为 $ V_p $ 的一个**坐标基底(coordinate basis)**,每个 $ X_\mu $ 称为一个**坐标基矢(coordinate basis vector)**, $ v\in V_p $ 以 $ \{X_\mu\} $ 线性表出的系数 $ v^\mu $ 称为 $ v $ 的**坐标分量(coordinate components)**.
 
-设 $ \{x^\mu\} $ 和 $ \{x^{\prime \nu}\} $ 为两个坐标系,其坐标域的交集非空, $ p $ 为交集中一点, $ v\in V_p,\{v^\mu\} $ 和 $ \{v^{\prime \nu}\} $ 是 $ v $ 在这两个系里面的坐标分量,则有 \$\$ v^{\prime\nu}=\left.\dfrac{\partial x^{\prime\nu}}{\partial x^\mu}\right|_p v^\mu, \$\$ 
+设 $ \{x^\mu\} $ 和 $ \{x^{\prime \nu}\} $ 为两个坐标系,其坐标域的交集非空, $ p $ 为交集中一点, $ v\in V_p,\{v^\mu\} $ 和 $ \{v^{\prime \nu}\} $ 是 $ v $ 在这两个系里面的坐标分量,则有 \$\$ v^{\prime\nu}=\left.\dfrac{\partial x^{\prime\nu}}{\partial x^\mu}\right\mid_p v^\mu, \$\$ 
 其中 $ x^{\prime\nu} $ 是两坐标系间变换函数 $ x^{\prime\nu}(x^\sigma) $ 的简写.上式称为**矢量的分量变换式**.
 
 #### 曲线
@@ -436,7 +438,7 @@ $f[x] \subset Y .$
 #### 切矢
 
 设 $ C(t) $ 是流形 $ M $ 上的 $ C^1 $ 曲线,则线上 $ C(t_0) $ 点的切于 $ C(t) $ 点的**切矢(tangent vector)** $ T $ 是 $ C(t_0) $ 点的矢量,它对 $ f\in \mathscr{F}_M $ 的作用定义为:
- \$\$ \left.T(f):=\dfrac{d(f\circ C)}{dt}\right|_{t_0}=\left.\dfrac{\partial}{\partial t}\right|_{C(t_0)}(f)=\left.\dfrac{df(C(t))}{dt}\right|_{t_0},\forall f\in \mathscr{F}_M. \$\$ 
+ \$\$ \left.T(f):=\dfrac{d(f\circ C)}{dt}\right\mid_{t_0}=\left.\dfrac{\partial}{\partial t}\right\mid_{C(t_0)}(f)=\left.\dfrac{df(C(t))}{dt}\right\mid_{t_0},\forall f\in \mathscr{F}_M. \$\$ 
 
 >  $ f:M\to\mathbb{R} $ 是 $ M $ 上的函数(标量场),不是什么一元函数,但与曲线 $ C:I\to M $ 的结合 $ f\circ M $ 则是以 $ t $ 为自变量的一元函数,也可记作 $ f(C(t)) $ .
 
@@ -455,8 +457,8 @@ $f[x] \subset Y .$
 
 设 $ A $ 为 $ M $ 的子集,若给 $ A $ 中每点指定一个矢量,就得到一个定义在 $ A $ 上的**矢量场(vector field)**.
 
->设 $ v $ 是 $ M $ 上的矢量场, $ f $ 是 $ M $ 上的函数,则 $ v $ 在 $ M $ 的任一点 $ p $ 的值 $ v|_p $ 将把 $ f $ 映射
-为一个实数 $ v|_{p}(f) $ ,它在 $ p $ 点遍历 $ M $ 时构成 $ M $ 上的一个函数 $ v(f) $ .因此,矢量场 $ v $ 可以视为函数 $ f $ 到函数 $ v(f) $ 的映射.
+>设 $ v $ 是 $ M $ 上的矢量场, $ f $ 是 $ M $ 上的函数,则 $ v $ 在 $ M $ 的任一点 $ p $ 的值 $ v\mid_p $ 将把 $ f $ 映射
+为一个实数 $ v\mid_{p}(f) $ ,它在 $ p $ 点遍历 $ M $ 时构成 $ M $ 上的一个函数 $ v(f) $ .因此,矢量场 $ v $ 可以视为函数 $ f $ 到函数 $ v(f) $ 的映射.
 
  $ M $ 上的矢量场 $ v $ 称为** $ C^\infty $ 类(光滑的)**,若 $ v $ 作用于 $ C^\infty $ 类函数的结果为 $ C^\infty $ 类函数,即 $ v(f)\in\mathscr{F}_M,\forall f\in \mathscr{F}_M. \$\$ v $ 称为** $ C^r $ 类**,若 $ v $ 作用于 $ C^r $ 类函数的结果为 $ C^r $ 类函数.
 
@@ -465,7 +467,7 @@ $f[x] \subset Y .$
  $ M $ 上矢量场 $ v $ 是 $ C^\infty(C^r) $ 类的充要条件是它在任一坐标基底的分量 $ v^\mu $ 为 $ C^\infty(C^r) $ 类函数.
 
 两个光滑矢量场 $ u,v $ 的**对易子(commutator)**是一个光滑矢量场 $ [u,v] $ ,定义为:
- \$\$ [u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M. \$\$ 
+ \$\$ [u,v]\mid_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M. \$\$ 
 
 >设 $ \{x^\mu\} $ 为任一坐标系,则 $ \left[\dfrac{\partial}{\partial x^\mu},\dfrac{\partial}{\partial x^\nu}\right]=0,\mu,\nu=1,\cdots,n. $ 
 
@@ -481,9 +483,9 @@ $f[x] \subset Y .$
 2.  $ \forall t,s \in \mathbb{R},\phi_t\circ \phi_s=\phi_{t+s} $ .
 
 >设 $ \phi:\mathbb{R}\times M\to M $ ,则 $ \phi_t=\phi(t,\cdot):M\to M;\phi_p=\phi(\cdot,p):\mathbb{R}\to M. $ \
-> $ \phi $ 为 $ M $ 上的一个单参微分同胚群,实际上指的是集合 $ \{\phi_t|t\mathbb{R}\} $ 是一个单参微分同胚群. 
+> $ \phi $ 为 $ M $ 上的一个单参微分同胚群,实际上指的是集合 $ \{\phi_t\midt\mathbb{R}\} $ 是一个单参微分同胚群. 
 
-设 $ \phi:\mathbb{R}\times M\to M $ 是单参微分同胚群,则 $ \forall p\in M,\phi_p:\mathbb{R}\to M $ 是过 $ p $ 点的一条光滑曲线,满足 $ \phi_p(0)=p $ ,叫做这个单参微分同胚群过 $ p $ 的**轨道(orbit)**.把这条曲线在 $ \phi_p(0) $ 的切矢记作 $ v|_p $ ,便得 $ M $ 上的一个光滑矢量场 $ v $ .可见 $ M $ 上的一个单参微分同胚群给出 $ M $ 上的一个光滑矢量场.
+设 $ \phi:\mathbb{R}\times M\to M $ 是单参微分同胚群,则 $ \forall p\in M,\phi_p:\mathbb{R}\to M $ 是过 $ p $ 点的一条光滑曲线,满足 $ \phi_p(0)=p $ ,叫做这个单参微分同胚群过 $ p $ 的**轨道(orbit)**.把这条曲线在 $ \phi_p(0) $ 的切矢记作 $ v\mid_p $ ,便得 $ M $ 上的一个光滑矢量场 $ v $ .可见 $ M $ 上的一个单参微分同胚群给出 $ M $ 上的一个光滑矢量场.
 
 ---
 
@@ -504,7 +506,7 @@ $f[x] \subset Y .$
 
 若在 $ M $ 或者 $ A\subset M $ 上每点指定一个对偶矢量,就得到 $ M $ 或者 $ A $ 上的一个**对偶矢量场**. $ M $ 上的对偶矢量场 $ \omega $ 称为**光滑的**,若 $ \forall \text{光滑矢量场}v,\omega(v)\in \mathscr{F}_M. $ 
 
-设 $ f\in \mathscr{F}_M,f $ 自然诱导出 $ M $ 上的一个对偶矢量场,记作 $ df $ ,满足 \$\$ df|_p(v):=v(f),\forall v\in V_p. \$\$ 
+设 $ f\in \mathscr{F}_M,f $ 自然诱导出 $ M $ 上的一个对偶矢量场,记作 $ df $ ,满足 \$\$ df\mid_p(v):=v(f),\forall v\in V_p. \$\$ 
 
 ---
 
@@ -530,7 +532,7 @@ $f[x] \subset Y .$
 \end{aligned} \$\$ 
 
 >欧氏空间中的并矢 $ \mathbf{vu} $ 实际上是 $ \mathbf{v} $ 与 $ \mathbf{u} $ 的张量积,不满足交换律,即 $ \mathbf{vu}\neq\mathbf{uv} $ .一般而言,两个矢量或者两个对偶矢量的张量积都不满足交换律.\
-> 量子力学中的 $ |{\psi}\rangle|{\phi}\rangle $ 也是 $ |{\psi}\rangle $ 与 $ |{\phi}\rangle $ 的张量积,只不过 $ |{\psi}\rangle $ 与 $ |{\phi}\rangle $ 所在的矢量空间是复数域上的无限维矢量空间.
+> 量子力学中的 $ \mid{\psi}\rangle\mid{\phi}\rangle $ 也是 $ \mid{\psi}\rangle $ 与 $ \mid{\phi}\rangle $ 的张量积,只不过 $ \mid{\psi}\rangle $ 与 $ \mid{\phi}\rangle $ 所在的矢量空间是复数域上的无限维矢量空间.
 
  $ V $ 上全体 $ (k,l) $ 型张量的集合 $ \mathscr{T}_V(k,l) $ 是矢量空间, $ dim\mathscr{T}_V(k,l)=n^{k+l}. $ 
 
@@ -578,7 +580,7 @@ T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial x^{\prime\mu_1}}
  > 给定 $ g $ 后再给定一个 $ v \in V $ ,得到  $ g(v,\cdot) \in V^* $ ,故 $ g:V \to V^* $ ,这是一个同构映射.很自然用这一个映射把 $ V $ 与 $ V^* $ 认同.从而无论有无度规, $ V $ 都与 $ V^{**} $ 认同,一旦有度规,则 $ V $ 与 $ V^\prime $ 也自然认同.
  
 
- $ v\in V $ 的**长度**或者**大小**定义为 $ |v|:=\sqrt{|g(v,v)|} $ .
+ $ v\in V $ 的**长度**或者**大小**定义为 $ \midv\mid:=\sqrt{\midg(v,v)\mid} $ .
 
 矢量 $ u,v\in V $ 称为**相互正交的**,若 $ g(v,u)=0 $ ;
 
@@ -618,9 +620,9 @@ T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial x^{\prime\mu_1}}
 
  $ M $ 上的对称的、处处非退化的(0,2)型张量场称为**度规张量场**.
 
-设 $ C(t) $ 是带有正定度规场 $ g $ 的任意流形 $ M $ 上任一 $ C^1 $ 曲线, $ T $ 是其切矢.即 $ T\equiv \dfrac{\partial}{\partial t} $ ,则 $ |T|=\sqrt{g(T,T)} $ , $ C(t) $ 的线长自然定义为 \$\$ l:=\int\sqrt{g(T,T)}d t. \$\$ 
+设 $ C(t) $ 是带有正定度规场 $ g $ 的任意流形 $ M $ 上任一 $ C^1 $ 曲线, $ T $ 是其切矢.即 $ T\equiv \dfrac{\partial}{\partial t} $ ,则 $ \midT\mid=\sqrt{g(T,T)} $ , $ C(t) $ 的线长自然定义为 \$\$ l:=\int\sqrt{g(T,T)}d t. \$\$ 
 
-设流形 $ M $ 上有洛伦兹度规场 $ g $ ,则 $ M $ 上的类空、类光以及类时曲线 $ C(t) $ 的线长定义为 \$\$ l:=\sqrt{|g(T,T)|}d t,T\equiv\dfrac{\partial}{\partial t}. \$\$ 
+设流形 $ M $ 上有洛伦兹度规场 $ g $ ,则 $ M $ 上的类空、类光以及类时曲线 $ C(t) $ 的线长定义为 \$\$ l:=\sqrt{\midg(T,T)\mid}d t,T\equiv\dfrac{\partial}{\partial t}. \$\$ 
 
 >曲线的线长与其参数化无关,曲线重参数化(保持映射的像不变而适当改变参数)不改变线长.
 
@@ -748,12 +750,12 @@ T_{[a_1\cdots a_l]}&:=\dfrac{1}{l!}\sum\limits_{\pi}\delta_\pi T_{a_{\pi(1)}\cdo
 
 #### 若干定理
 
-1. 设 $ p\in M,\omega_b,\omega_b^\prime \in \mathscr{F}(0,1) $ 满足 $ \omega^{\prime}_b|_p=\omega_b|_p, $ 则有 \$\$ [(\tilde{\nabla}_a-\nabla_a)\omega_b^\prime]_p=[(\tilde{\nabla}_a-\nabla_a)\omega_b]_p, \$\$ 
+1. 设 $ p\in M,\omega_b,\omega_b^\prime \in \mathscr{F}(0,1) $ 满足 $ \omega^{\prime}_b\mid_p=\omega_b\mid_p, $ 则有 \$\$ [(\tilde{\nabla}_a-\nabla_a)\omega_b^\prime]_p=[(\tilde{\nabla}_a-\nabla_a)\omega_b]_p, \$\$ 
 其中 $ (\tilde{\nabla}_a-\nabla_a)\omega_b $ 是 $ \tilde{\nabla}_a\omega_b-\nabla_a\omega_b $ 的简写.
 
-> $ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p $ 只依赖于 $ \omega_b $ 在 $ p $ 点的值,这说明 $ (\tilde{\nabla}_a-\nabla_a) $ 是把 $ p $ 的对偶矢量 $ \omega_b|_p $ 变为 $ p $ 点的 $ (0,2) $ 型张量 $ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p $ 的线性映射.
+> $ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p $ 只依赖于 $ \omega_b $ 在 $ p $ 点的值,这说明 $ (\tilde{\nabla}_a-\nabla_a) $ 是把 $ p $ 的对偶矢量 $ \omega_b\mid_p $ 变为 $ p $ 点的 $ (0,2) $ 型张量 $ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p $ 的线性映射.
 >
->> 所以在 $ p $ 点 $ (\tilde{\nabla}_a-\nabla_b) $ 对应于一个 $ (1,2) $ 型张量 $ C^c{}_{ab} $ ,满足 \$\$ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p=C^c{}_{ab}\omega_c|_p\Rightarrow\nabla_a\omega_b=\tilde{\nabla}_a\omega_b-C^c{}_{ab}\omega_c,\forall \omega_b \in \mathscr{F}(0,1). \$\$ 
+>> 所以在 $ p $ 点 $ (\tilde{\nabla}_a-\nabla_b) $ 对应于一个 $ (1,2) $ 型张量 $ C^c{}_{ab} $ ,满足 \$\$ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p=C^c{}_{ab}\omega_c\mid_p\Rightarrow\nabla_a\omega_b=\tilde{\nabla}_a\omega_b-C^c{}_{ab}\omega_c,\forall \omega_b \in \mathscr{F}(0,1). \$\$ 
 
 2.  $ \nabla_a $ 的无挠性将会导致张量 $ C^c{}_{ab} $ 具有如下的对称性 $ C^c{}_{ab}=C^c{}_{ba}. $ 
 
@@ -832,17 +834,17 @@ T^b\nabla_b v^a=(\frac{\partial}{\partial x^\mu})^a(\frac{d\nu^\mu}{dt}+\Gamma^\
 
 - 欧氏空间中曲线 $ C(t) $ 上的矢量场 $ \mathbf{v} $ 沿线的导数 $ \dfrac{d\mathbf{v}}{dt} $ 定义为
  \$\$ 
-\dfrac{d\mathbf{v}}{dt}:=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{\mathbf{v}}|_p-\mathbf{v}_p),\forall p\in C(t),
+\dfrac{d\mathbf{v}}{dt}:=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{\mathbf{v}}\mid_p-\mathbf{v}_p),\forall p\in C(t),
  \$\$ 
-其中 $ \tilde{\mathbf{v}}|p $ 是把 $ \mathbf{v}|q $ ( $ q $ 为 $ p $ 在线上的邻点)平移至 $ p $ 点的结果, $ \Delta t\equiv t(q)-t(p). $ 
+其中 $ \tilde{\mathbf{v}}\midp $ 是把 $ \mathbf{v}\midq $ ( $ q $ 为 $ p $ 在线上的邻点)平移至 $ p $ 点的结果, $ \Delta t\equiv t(q)-t(p). $ 
 
 > 将 $ T^b\nabla_b v^a $ 称为 $ v^a $ 沿着 $ T^b $ 的导数,有时记作 $ \dfrac{D v^a}{dt}\equiv T^b\nabla_b v^a. $ 
 
 - 设 $ v^a $ 是 $ (M,\nabla_a) $ 的曲线 $ C(t) $ 上的矢量场, $ T^b $ 是 $ C(t) $ 的切矢, $ p,q $ 是 $ C(t) $ 上的邻点
  \$\$ 
-T^b\nabla_b v^a|_p=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{v}^a|_p-v^a|_p),
+T^b\nabla_b v^a\mid_p=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{v}^a\mid_p-v^a\mid_p),
  \$\$ 
-其中 $ \tilde{v}^a|_p $ 是 $ v^a|_q $ 沿 $ C(t) $ 平移至 $ p $ 点的结果, $ \Delta t\equiv t(q)-t(p). $ 
+其中 $ \tilde{v}^a\mid_p $ 是 $ v^a\mid_q $ 沿 $ C(t) $ 平移至 $ p $ 点的结果, $ \Delta t\equiv t(q)-t(p). $ 
 
 ---
 
@@ -891,12 +893,12 @@ T^b\nabla_b v^a|_p=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{v}^a|_p-v^a|_p
  
  1. 设 $ f\in \mathscr{F},\omega_a\in \mathscr{F}(0,1) $ ,则有
   \$\$ (\nabla_a\nabla_b-\nabla_b\nabla_a)(f\omega_c)=f(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c. \$\$ 
- 2. 设 $ \omega_c,\omega^\prime\in \mathscr{F}(0,1),\omega_c^\prime|_p=\omega_c|_p, $ 则有
-  \$\$ [(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c^\prime]|_p=[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]|_p. \$\$  
+ 2. 设 $ \omega_c,\omega^\prime\in \mathscr{F}(0,1),\omega_c^\prime\mid_p=\omega_c\mid_p, $ 则有
+  \$\$ [(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c^\prime]\mid_p=[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]\mid_p. \$\$  
 
 
 >
-  \$\$ (\nabla_a\nabla_b-\nabla_b\nabla_a):\underset{p\text{点的对偶矢量(0,1)}}{\underline{\omega_c|_p}}\xrightarrow{linear}\underset{p\text{点的(0,3)型张量}}{\underline{[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]|_p}} \$\$ 
+  \$\$ (\nabla_a\nabla_b-\nabla_b\nabla_a):\underset{p\text{点的对偶矢量(0,1)}}{\underline{\omega_c\mid_p}}\xrightarrow{linear}\underset{p\text{点的(0,3)型张量}}{\underline{[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]\mid_p}} \$\$ 
 >这表明 $ (\nabla_a\nabla_b-\nabla_b\nabla_a) $ 对应于一个(1,3)型张量.
 
 - 导数算符 $ \nabla_a $ 的**黎曼曲率张量场**(Riemann curvature tensor) $ R_{abc}{}^d $ 由下式定义:
@@ -974,7 +976,7 @@ C_{abcd}:=R_{abcd}-\dfrac{2}{n-2}(g_{a[c}R_{d]b}-g_{b[c}R_{d]a}) +\dfrac{2}{(n-1
 - 设 $ M,N $ 为流形, $ \phi:M\to N $ 为光滑映射, $ \mathscr{F}_M,\mathscr{F}_N $ 分别代表 $ M,N $ 上光滑函数的集合, $ \mathscr{F}_M(k,l) $ 与 $ \mathscr{F}_N(k,l) $ 分别代表 $ M,N $ 上光滑 $ (k,l) $ 型张量场的集合.
 
 1. **拉回映射**(pull back): $ \phi^*:\mathscr{F}_N\to\mathscr{F}_M $ 定义为
- \$\$ (\phi^*f)|_p:=f|_{\phi(p)},\forall f \in \mathscr{F}_N,p\in M, \$\$ 即 $ \phi^*f=f\circ \phi $ .
+ \$\$ (\phi^*f)\mid_p:=f\mid_{\phi(p)},\forall f \in \mathscr{F}_N,p\in M, \$\$ 即 $ \phi^*f=f\circ \phi $ .
 
 > $ \phi^*:\mathscr{F}_N\to\mathscr{F}_M $ 是线性映射,且有 $ \phi^* (fg)=\phi^*(f) \phi^*(g),\forall f,g \in\mathscr{F}_N. $ 
 
@@ -992,8 +994,8 @@ C_{abcd}:=R_{abcd}-\dfrac{2}{n-2}(g_{a[c}R_{d]b}-g_{b[c}R_{d]a}) +\dfrac{2}{(n-1
 1. 拉回映射可以按照如下方式延拓至 $ \phi^*:\mathscr{F}_N(0,l)\to\mathscr{F}_M(0,l) $ :
  $ \forall T\in\mathscr{F}_N(0,l), $ 定义
  \$\$ \begin{aligned}
-(\phi^*T)&_{a_1\cdots a_l}|_p(v_1)^{a_1}\cdots(v_l)^{a_l}
-\\&:=T_{a_1\cdots a_l}|_{\phi(p)}(\phi_*v_1)^{a_1}\cdots(\phi_*v_l)^{a_l},\\
+(\phi^*T)&_{a_1\cdots a_l}\mid_p(v_1)^{a_1}\cdots(v_l)^{a_l}
+\\&:=T_{a_1\cdots a_l}\mid_{\phi(p)}(\phi_*v_1)^{a_1}\cdots(\phi_*v_l)^{a_l},\\
 &\forall p \in M,v_1,\cdots,v_l\in V_p.
 \end{aligned} \$\$   
 
@@ -1016,7 +1018,7 @@ C_{abcd}:=R_{abcd}-\dfrac{2}{n-2}(g_{a[c}R_{d]b}-g_{b[c}R_{d]a}) +\dfrac{2}{(n-1
 1. **主动观点**:认为 $ \phi $ 是点的变换以及由此导致的张量变换,即 \$\$ p\to\phi(p);T_p\to \phi_{*}T_{\phi(p)}; \$\$ 
 2. **被动观点**,认为点 $ p $ 以及其上的所有张量 $ T $ 都没变, $ \phi:M\to N $ 的后果是坐标系有了变换,从 $ \{x^\mu\} $ 变为 $ \{x^{\prime\mu}\}. $  
 
--  $ (\phi_*^T)^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}|_{\phi(p)}=T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}|_p,\forall T\in\mathscr{F}_M(k,l), $ 式中左边是新点 $ \phi(p) $ 的新张量 $ \phi_*T $ 在老坐标系 $ \{y^\mu\} $ 的分量,右边是老点 $ p $ 的老张量 $ T $ 在新坐标系 $ \{ x^{\prime \mu}\} $ 
+-  $ (\phi_*^T)^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}\mid_{\phi(p)}=T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}\mid_p,\forall T\in\mathscr{F}_M(k,l), $ 式中左边是新点 $ \phi(p) $ 的新张量 $ \phi_*T $ 在老坐标系 $ \{y^\mu\} $ 的分量,右边是老点 $ p $ 的老张量 $ T $ 在新坐标系 $ \{ x^{\prime \mu}\} $ 
 的分量.
 
 ---
