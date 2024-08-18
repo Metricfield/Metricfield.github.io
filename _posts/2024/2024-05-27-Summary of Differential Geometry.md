@@ -33,7 +33,7 @@ description: This article records the content of differential geometry from the 
 
  下面是本文的维护信息:
 
- - 2024.08.18 撰写前言,完成第一章公式的审核与内容形式的更新.
+- 2024.08.18 撰写前言,完成第一章公式的审核与内容形式的更新.
 
 
 
