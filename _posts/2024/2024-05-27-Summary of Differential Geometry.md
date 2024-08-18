@@ -120,15 +120,14 @@ $f[x] \subset Y .$
 > 亦即排除了“多对一”的映射.数学书称一一映射为单射.
 {: .prompt-warning }
   
-    若 $ f $ 为一一映射,则存在逆映射 $ f^{-1}: f[X] \to X $ .无论 $ f:X\to Y $ 是否有逆,都可以定义任一子集 $ B \subset Y $ 在 $ f $ 下的逆像 $ f^{-1}[B] $ 为: $$ f^{-1}[B]:=\{x\in X \mid f(x)\in B\}\subset X. $$ 这里的逆像是 $ X $ 的子集而非元素.
-
+  若 $ f $ 为一一映射,则存在逆映射 $ f^{-1}: f[X] \to X $ .无论 $ f:X\to Y $ 是否有逆,都可以定义任一子集 $ B \subset Y $ 在 $ f $ 下的逆像 $ f^{-1}[B] $ 为: $$ f^{-1}[B]:=\{x\in X \mid f(x)\in B\}\subset X. $$ 这里的逆像是 $ X $ 的子集而非元素.
+-
   - 映射 $ f:X\to Y $ 称为**到上的**(onto),若 $ \forall y \in Y $ ,都有逆像,可以多于一个. $ f $ 为到上映射的充要条件是值域 $ f[X]=Y $ .
 
 > 数学书称到上映射为**满射**.
 {: .prompt-warning }
-
+-
   - 既是一一映射,又是到上映射,则称为一一到上的映射,数学上称为双射或者一一对应.
-
   - $ f:X\to Y $ 称为常值映射,若 $ \forall x,x'\in X,f(x)=f(x') $ .
   - 设 $ X,Y,Z $ 为集合, $ f:X\to Y,g:Y\to Z $ 为映射,则 $ f $ 和 $ g $ 的复合映射 $ g\circ f $ 是从 $ X $ 到 $ Z $ 的映射,定义为 
   $$ (g \circ f)(x):=g(f(x))\in Z,\forall x \in X $$ .
