@@ -82,16 +82,18 @@ description: This article records the content of differential geometry from the 
 1. 交换律: $ A\cup B=B\cup A,A\cap B=B\cap A. $ 
 2. 结合律: $ (A\cup B)\cup C=A\cup (B\cup C),(A\cap B)\cap C=A\cap (B\cap C) $ .
 3. 分配律: $ (A\cap B)\cup C=(A\cup C)\cap(B\cup C),(A\cup B)\cap C=(A\cap C)\cup(B\cap C) $ .
-4. De Morgen定律: $ A-(B\cup C)=(A-B)\cap (A-C),A-(B\cap C)=(A-B)\cup(A-C) $ 
+4. De Morgen定律: $ A-(B\cup C)=(A-B)\cap (A-C),A-(B\cap C)=(A-B)\cup(A-C) $. 
   
 #### 卡氏积
-非空集合 $ X,Y $ 的卡氏积(Cartesian product) $ X\times Y $ 定义为 $ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $ 
+
+- 非空集合 $ X,Y $ 的**卡氏积**(Cartesian product) $ X\times Y $ 定义为 
+$$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$ 
    
-有限个集合的卡氏积可以定义为: $ X\times Y\times Z:=\{(x,y,z)|x\in X,y\in Y,z\in Z\}. $ 
+- 有限个集合的卡氏积可以定义为: $$ X\times Y\times Z:=\{(x,y,z)|x\in X,y\in Y,z\in Z\}. $$ 
 
 >规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
 
- $ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离定义为 
+- 定义$ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离为 
  $$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
 
 #### 映射
