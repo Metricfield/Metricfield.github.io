@@ -70,7 +70,7 @@ description: This article records the content of differential geometry from the 
 1. 并集(union): $$ A \cup B := \{ x \mid x \in  A \text{或} x \in B \}. $$ 
 2. 交集(intersection): $$ A \cap B:= \{x \mid x \in A,x \in B \}. $$ 
 3. 差集(difference): $$ A-B:= \{ x \mid x \in A,x \notin B \}. $$ 
-4. 补集(complement):若 $$ A \subset X $ ,则补集 $ -A:=X-A. $$ 
+4. 补集(complement):若 $$ A \subset X $ ,则补集 $$ -A:=X-A. $$ 
 
 > “A := B ”表示A被定义B，参加[Mathematics Stack Exchange上的相关回答](https://math.stackexchange.com/questions/25214/what-does-mean).
 {: .prompt-warning }
@@ -80,7 +80,7 @@ description: This article records the content of differential geometry from the 
 
 1. 交换律: $ A\cup B=B\cup A,A\cap B=B\cap A. $ 
 2. 结合律: $ (A\cup B)\cup C=A\cup (B\cup C),(A\cap B)\cap C=A\cap (B\cap C) $ .
-3，分配律: $ (A\cap B)\cup C=(A\cup C)\cap(B\cup C),(A\cup B)\cap C=(A\cap C)\cup(B\cap C) $ .
+3. 分配律: $ (A\cap B)\cup C=(A\cup C)\cap(B\cup C),(A\cup B)\cap C=(A\cap C)\cup(B\cap C) $ .
 4. De Morgen定律: $ A-(B\cup C)=(A-B)\cap (A-C),A-(B\cap C)=(A-B)\cup(A-C) $ 
   
 #### 卡氏积
