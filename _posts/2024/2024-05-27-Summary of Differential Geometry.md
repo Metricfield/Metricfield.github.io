@@ -64,7 +64,8 @@ description: This article records the content of differential geometry from the 
 
 映射 $ f:X\to Y $ 和 $ f':X\to Y $ 称为相等的,若 $ \forall x\in X,f(x)=f'(x) $ .
 
- 设 $ A\subset X, $ 则 $ A $ 的元素在 $ f $ 下的像组成的子集记作 $ f[A] $ ,即 $ f[A]\equiv\{y\in Y|\exists x\in A,y=f(x)\}\subset Y. $ 
+ 设 $ A\subset X, $ 则 $ A $ 的元素在 $ f $ 下的像组成的子集记作 $ f[A] $ ,即 
+ $ f[A] \equiv \{ y \in Y | \exists x \in A,y=f(x) \} \subset Y.$ 
 
 > 映射的定义只要求 $ \forall x\in X,x\mapsto y\in Y $ 必须唯一,而无论到底是“一对一”还是“多对一”,也不论 $ Y $ 中是不是有元素“剩余”.于是可以继续对映射加以限制从而进一步分类.
  
