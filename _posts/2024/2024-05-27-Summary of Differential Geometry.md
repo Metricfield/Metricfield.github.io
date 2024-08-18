@@ -71,9 +71,9 @@ description: This article records the content of differential geometry from the 
 1. 并集(union): $$ A \cup B := \{ x \mid x \in  A \text{或} x \in B \}. $$ 
 2. 交集(intersection): $$ A \cap B:= \{x \mid x \in A,x \in B \}. $$ 
 3. 差集(difference): $$ A-B:= \{ x \mid x \in A,x \notin B \}. $$ 
-4. 补集(complement):若 $$ A \subset X $ ,则补集 $$ -A:=X-A. $$ 
+4. 补集(complement):若 $$ A \subset X $$ ,则补集 $$ -A:=X-A. $$ 
 
-> “A := B ”表示A被定义B，参加[Mathematics Stack Exchange上的相关回答](https://math.stackexchange.com/questions/25214/what-does-mean).
+> “A := B ”表示A被定义为B，参加[Mathematics Stack Exchange上的相关回答](https://math.stackexchange.com/questions/25214/what-does-mean).
 {: .prompt-warning }
 
 
@@ -92,6 +92,7 @@ $$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$
 - 有限个集合的卡氏积可以定义为: $$ X\times Y\times Z:=\{(x,y,z)|x\in X,y\in Y,z\in Z\}. $$ 
 
 >规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
+{: .prompt-info }
 
 - 定义$ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离为 
  $$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. $$ 
