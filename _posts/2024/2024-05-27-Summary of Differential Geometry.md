@@ -57,8 +57,9 @@ description: This article records the content of differential geometry from the 
 
 - 表示集合的常用方法有**列举法**与**描述法**两种.
 
-> 当然还有文恩图.
-  
+> 当然还有用[文氏图](https://zh.wikipedia.org/wiki/%E6%96%87%E6%B0%8F%E5%9B%BE)(Venn diagram)表示集合关系的,特点是直观,但不够严格.
+{: .prompt-warning }
+
 #### 子集
    
 - 若 $ \forall x\in A $ 都有 $ x\in X $ ,称 $ A $ 是 $ X $ 的子集(subset),记作 $ A\subset X $ .
