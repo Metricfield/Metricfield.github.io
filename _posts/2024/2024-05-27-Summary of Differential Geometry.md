@@ -148,7 +148,7 @@ description: This article records the content of differential geometry from the 
   > 其中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n||x-x_0|<r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.\
   >  $ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
   
-4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 \$\$ \mathscr{T}:=\{O\subset X|O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{{T}_2}\} \$\$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑(product topology)**.
+4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 \$\$ \mathscr{T}:=\{O\subset X|O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{T}_2\} \$\$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑(product topology)**.
 5. 设 $ (X,\mathscr{T}) $ 是拓扑空间, $ A $ 为 $ X $ 的任一非空子集.把 $ A $ 看成集合,指定拓扑 $ \mathscr{S} $ 为 \$\$ 
 \mathscr{S}:=\{V\subset A|\exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \$\$ 
 这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑(induced topology).**  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间(topological subspace)**.
