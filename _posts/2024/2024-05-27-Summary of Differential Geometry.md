@@ -33,7 +33,7 @@ description: This article records the content of differential geometry from the 
 
  下面是本文的维护信息:
 
-- 2024.08.18 撰写前言,完成第一章公式的审核与内容形式的更新.
+
 
 
 
@@ -194,13 +194,11 @@ $f[x] \subset Y .$
   \[ \mathscr{S}:=\{V\subset A \mid \exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \]
 这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑**(induced topology).  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间(topological subspace)**.
 
->  $ \mathbb{R}^n $ 的通常拓扑中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.$ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
+>  - $ \mathbb{R}^n $ 的通常拓扑中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.$ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
 >
-> ![诱导拓扑的一个简单例子](/assets/img/in-post/2024/youdaotuopu.jpg)
-> 
-> 如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0\mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
->
->显然,在拓扑中,离散拓扑的元素最多，而凝聚拓扑的元素最少.
+> <img src="/assets/img/in-post/2024/youdaotuopu.jpg" width="200" height="200">
+> - 上图为诱导拓扑的一个典型例子,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0\mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
+> - 显然,在拓扑中,离散拓扑的元素最多，而凝聚拓扑的元素最少.
 {: .prompt-info }
 
 
