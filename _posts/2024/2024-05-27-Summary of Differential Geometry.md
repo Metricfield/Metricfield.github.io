@@ -103,9 +103,8 @@ $$ X\times Y:=\{(x,y) \mid x\in X,y\in Y\}. $$
    
 - 设集合 $ X,Y $ 非空.一个从 $ X $ 到 $ Y $ 的映射是一个法则,它给 $ X $ 的每一元素指定 $ Y $ 的唯一对应元素.若 $ y\in Y $ 是 $ x\in X $ 的对应元素,就写 $ y=f(x) $ ,并称 $ y $ 为 $ x $ 在映射 $ f $ 下的**像**(image),称 $ x $ 为**原像**或者逆像(inverse image). $ X $ 称为映射 $ f $ 的**定义域**(domain), $ X $ 的全体元素在映射 $ f $ 下的像的集合 $ f[x] $ 称为映射 $ f:X\to Y $ 的**值域**(range).
 
-> 映射的定义只要求 $ \forall x\in X,x\mapsto y\in Y $ 必须唯一,而无论到底是“一对一”还是“多对一”,也不论 $ Y $ 中是不是有元素剩余.于是可以继续对映射加以限制从而进一步分类.
-> 
-> 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),北京大学丘维生教授在国内首先将其译作“陪域”.显然, 
+> - 映射的定义只要求 $ \forall x\in X,x\mapsto y\in Y $ 必须唯一,而无论到底是“一对一”还是“多对一”,也不论 $ Y $ 中是不是有元素剩余.于是可以继续对映射加以限制从而进一步分类.
+> - 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),北京大学丘维生教授在国内首先将其译作“陪域”.显然, 
 $f[x] \subset Y .$
 {: .prompt-warning }
 
@@ -164,9 +163,8 @@ $f[x] \subset Y .$
 
 每种满足上述三要求的指定给集合 $ X $ 赋予了一种附加结构,称为**拓扑结构**.
   
->对定义了拓扑结构的集合的任一子集,其是否为开子集非“是”即“否”.
->
-> 注意条件2仅允许有限数目开集的交.如在实数轴 $ \mathbb{R} $ 上,无限多个以 $ b $ 点为中心的开集的交 $ \bigcap\limits_{n=1}^\infty B\left(b,\frac{1}{n}\right) $ 为 $ b $ 点自身,而点 $ b $ 不是 $ \mathbb{R} $ 中开集,仅为闭集.
+> - 对定义了拓扑结构的集合的任一子集,其是否为开子集非“是”即“否”.
+> - 注意条件2仅允许有限数目开集的交.如在实数轴 $ \mathbb{R} $ 上,无限多个以 $ b $ 点为中心的开集的交 $ \bigcap\limits_{n=1}^\infty B\left(b,\frac{1}{n}\right) $ 为 $ b $ 点自身,而点 $ b $ 不是 $ \mathbb{R} $ 中开集,仅为闭集.
 {: .prompt-info }
 
 > 为何单点集合 $ \{b\} $ 为闭集呢?有两种理解
@@ -191,13 +189,13 @@ $f[x] \subset Y .$
 设 $ X=\mathbb{R}^n $ ,则 $ \mathscr{T}_u:=\{\text{空集或者}\mathbb{R}^n\text{中能够表示为开球之并的子集}\} $ 称为 $ \mathbb{R}^n $ 的**通常拓扑**.
 4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 $$ \mathscr{T}:=\{O\subset X \mid O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{T}_2\} $$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑**(product topology).
 5. 设 $ (X,\mathscr{T}) $ 是拓扑空间, $ A $ 为 $ X $ 的任一非空子集.把 $ A $ 看成集合,指定拓扑 $ \mathscr{S} $ 为 
-  \[ \mathscr{S}:=\{V\subset A \mid \exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \]
-这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑**(induced topology).  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间(topological subspace)**.
+  $$ \mathscr{S}:=\{V\subset A \mid \exists\ O\in \mathscr{T}s.t.V=A\cap O\}, $$
+这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑**(induced topology).  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间**(topological subspace).
 
 >  - $ \mathbb{R}^n $ 的通常拓扑中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.$ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
 >
 > <img src="/assets/img/in-post/2024/youdaotuopu.jpg" alt="诱导拓扑的一个简单例子" width="200" height="200">
-> - 上图为诱导拓扑的一个典型例子,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0\mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
+> - 上图为诱导拓扑的一个典型例子,设 $$ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0\mid =1\} $$ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
 > - 显然,在拓扑中,离散拓扑的元素最多，而凝聚拓扑的元素最少.
 {: .prompt-info }
 
