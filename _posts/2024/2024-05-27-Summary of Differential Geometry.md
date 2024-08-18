@@ -12,7 +12,7 @@ description: This article records the content of differential geometry from the 
 
 除正文以外,本文还有如下环境
 
-> 这是用来表示“建议”或者“提示”的,通常与本文内容无关,可以略去不看.
+> 这是用来表示“建议”或者“提示”的,通常与本文内容关系不大,仅仅起到提示的作用.
 {: .prompt-tip }
 
 > 这用来表示作者(即梁和周)的“注记”,是书里面提到过的,并且有助于深刻理解的内容.
@@ -41,7 +41,11 @@ description: This article records the content of differential geometry from the 
 
 
 ## 第1章 拓扑空间简介
+
 ### 1.1 集论初步
+
+> 这部分内容很早就学习过,印象深刻可以跳过.
+{: .prompt-tip }
 
 #### 集合
 
