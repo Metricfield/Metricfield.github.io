@@ -33,10 +33,12 @@ description: This article records the content of differential geometry from the 
 
  下面是本文的维护信息:
 
+ - 2024.08.18 撰写前言,完成第一章公式的审核与内容形式的更新.
 
 
 
-好了,废话结束.接下来,让我们进入微分几何的学习旅途.😊
+
+好了,废话结束.接下来,让我们进入**微分几何**的学习旅途.😊
 
 
 <hr>
