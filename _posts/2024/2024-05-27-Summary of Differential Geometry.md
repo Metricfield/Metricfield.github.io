@@ -198,10 +198,10 @@ $f[x] \subset Y .$
 >
 > <img src="/assets/img/in-post/2024/youdaotuopu.jpg" alt="诱导拓扑的一个简单例子">
 > 
-> 如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0 \mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
-
->显然,离散拓扑元素最多，而凝聚拓扑元素最少.
-
+> 如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0\mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
+>
+>显然,在拓扑中,离散拓扑的元素最多，而凝聚拓扑的元素最少.
+{: .prompt-info }
 
 
 
