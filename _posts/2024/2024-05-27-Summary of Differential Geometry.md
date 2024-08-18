@@ -73,15 +73,15 @@ description: This article records the content of differential geometry from the 
 3. 差集(difference): $$ A-B:= \{ x \mid x \in A,x \notin B \}. $$ 
 4. 补集(complement):若 $$ A \subset X $$ ,则补集 $$ -A:=X-A. $$ 
 
-> “A := B ”表示A被定义为B，参加[Mathematics Stack Exchange上的相关回答](https://math.stackexchange.com/questions/25214/what-does-mean).
+> “A := B ”表示A被定义为B，参见[Mathematics Stack Exchange上的相关回答](https://math.stackexchange.com/questions/25214/what-does-mean).
 {: .prompt-warning }
 
 
 #### 集合满足的运算律
 
 1. 交换律: $ A\cup B=B\cup A,A\cap B=B\cap A. $ 
-2. 结合律: $ (A\cup B)\cup C=A\cup (B\cup C),(A\cap B)\cap C=A\cap (B\cap C) $ .
-3. 分配律: $ (A\cap B)\cup C=(A\cup C)\cap(B\cup C),(A\cup B)\cap C=(A\cap C)\cup(B\cap C) $ .
+2. 结合律: $ (A\cup B)\cup C=A\cup (B\cup C),(A\cap B)\cap C=A\cap (B\cap C) .$ 
+3. 分配律: $ (A\cap B)\cup C=(A\cup C)\cap(B\cup C),(A\cup B)\cap C=(A\cap C)\cup(B\cap C) .$ 
 4. De Morgen定律: $ A-(B\cup C)=(A-B)\cap (A-C),A-(B\cap C)=(A-B)\cup(A-C) $. 
   
 #### 卡氏积
@@ -91,9 +91,9 @@ $$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$
    
 - 有限个集合的卡氏积可以定义为: $$ X \times Y \times Z := \{(x,y,z)\mid x \in X,y \in Y,z \in Z \}. $$ 
 
--规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
+- 规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
 
-> 实际上卡氏积就是对集合内的多个元素按照一定顺序打包封装而已,并未对元素进行处理.
+> 实际上卡氏积就是对集合内的多个元素按照一定顺序打包封装而已,并未对元素进行任何处理.
 {: .prompt-warning }
 
 - 定义$ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离为 
@@ -101,7 +101,7 @@ $$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$
 
 #### 映射
    
-设集合 $ X,Y $ 非空.一个从 $ X $ 到 $ Y $ 的映射是一个法则,它给 $ X $ 的每一元素指定 $ Y $ 的唯一对应元素.若 $ y\in Y $ 是 $ x\in X $ 的对应元素,就写 $ y=f(x) $ ,并称 $ y $ 为 $ x $ 在映射 $ f $ 下的像(image),称 $ x $ 为原像或者逆像(inverse image).
+- 设集合 $ X,Y $ 非空.一个从 $ X $ 到 $ Y $ 的映射是一个法则,它给 $ X $ 的每一元素指定 $ Y $ 的唯一对应元素.若 $ y\in Y $ 是 $ x\in X $ 的对应元素,就写 $ y=f(x) $ ,并称 $ y $ 为 $ x $ 在映射 $ f $ 下的像(image),称 $ x $ 为原像或者逆像(inverse image).
 
  $ X $ 称为映射 $ f $ 的定义域(domain), $ X $ 的全体元素在映射 $ f $ 下的像的集合 $ f[x] $ 称为映射 $ f:X\to Y $ 的值域(range).
 
