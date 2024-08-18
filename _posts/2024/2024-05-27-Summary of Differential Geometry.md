@@ -61,17 +61,21 @@ description: This article records the content of differential geometry from the 
   
 #### 子集
    
-- 若 $ \forall x\in A,x\in X $ ,称 $ A $ 是 $ X $ 的子集(subset),记作 $ A\subset X $ .
+- 若 $ \forall x\in A $ 都有 $ x\in X $ ,称 $ A $ 是 $ X $ 的子集(subset),记作 $ A\subset X $ .
 规定空集是任一集合的子集.若进一步 $ A\neq X $ ,称 $ A $ 是 $ X $ 的真子集(proper subset),记作 $ A \subsetneqq X $ .
 
-若 $ A\subset X,X\subset A, $ 则 $ A=X $ ,称为集合相等.
+- 若 $ A\subset X,X\subset A, $ 则 $ A=X $ ,称为集合相等.
 
 #### 集合的运算
-1. 并集(union): $ A \cup B := \{ x \mid x \in  A \text{或} x \in B \}. $ 
-2. 交集(intersection): $ A \cap B:= \{x \mid x \in A,x \in B \}. $ 
-3. 差集(difference): $ A-B:= \{ x \mid x \in A,x \notin B \}. $ 
-4. 补集(complement):若 $ A \subset X $ ,则补集 $ -A:=X-A. $ 
-   
+1. 并集(union): $$ A \cup B := \{ x \mid x \in  A \text{或} x \in B \}. $$ 
+2. 交集(intersection): $$ A \cap B:= \{x \mid x \in A,x \in B \}. $$ 
+3. 差集(difference): $$ A-B:= \{ x \mid x \in A,x \notin B \}. $$ 
+4. 补集(complement):若 $$ A \subset X $ ,则补集 $ -A:=X-A. $$ 
+
+> “A := B ”表示A被定义B，参加[Mathematics Stack Exchange上的相关回答](https://math.stackexchange.com/questions/25214/what-does-mean).
+{: .prompt-warning }
+
+
 #### 集合满足的运算律
 
 1. 交换律: $ A\cup B=B\cup A,A\cap B=B\cap A. $ 
