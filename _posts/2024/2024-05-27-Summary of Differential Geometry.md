@@ -10,31 +10,26 @@ description: This article records the content of differential geometry from the 
 
 在这里,我将会*简明扼要*地摘录《微分几何入门与广义相对论》(上册)1-5章,微分几何相关的概念、定理以及公式等.为了更快地掌握(至少熟悉)微分几何的语言,我们不得不暂时先略去相关的数学证明,而这在书上以及[梁灿彬老师的现场教学](https://www.bilibili.com/video/BV1qF411t72r/?spm_id_from=333.337.search-card.all.click)上都有所涉及.
 
-> 很遗憾,并非所有的公式都完整渲染出来了.但好在我们有教材[^1].
-{: .prompt-danger}
+除正文以外,本文还有如下环境:
 
-[^1]:如果你连教材也没有,那问题其实也不会很大,因为我会不定期更新公式以适配目前的这个环境.不过为了更好的学习效果,我建议你还是先看教材.
-
->  2024.5.27(实际上更早)-2024.7.6
-
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-> An example showing the `tip` type prompt.
-{: .prompt-tip }
-
-> An example showing the `info` type prompt.
+> 这用来表示作者(即梁和周)的“注记”,是书里面提到过的,并且有助于深刻理解的内容.
 {: .prompt-info }
 
-> An example showing the `warning` type prompt.
+> 这用来表示我的“注记”,是我(Metricfield)的理解,未必准确到位,读者自行参考.
 {: .prompt-warning }
 
-> An example showing the `danger` type prompt.
+> 这用来表示“警告”,常常出现在某些易错、易混淆的内容后面.
 {: .prompt-danger }
 
-接下来,让我们进入微分几何的学习旅途.😊
+很遗憾,并非所有的公式在该环境下都完整渲染出来了.但好在我们有教材[^1].
+如果你连教材也没有,那问题其实也不会很大,因为我会不定期更新公式以期适配目前这个渲染环境.不过为了更好的学习效果,我还是建议你先看教材或是网课.
+
+ ~~当然,将本文用作一日速成微几的材料也未尝不可(笑. ~~
+
+好了,废话结束.接下来,让我们进入微分几何的学习旅途.😊
 
 <hr>
+
 
 ## 第1章 拓扑空间简介
 ### 1.1 集论初步
