@@ -101,9 +101,14 @@ $$ X\times Y:=\{(x,y)|x\in X,y\in Y\}. $$
 
 #### 映射
    
-- 设集合 $ X,Y $ 非空.一个从 $ X $ 到 $ Y $ 的映射是一个法则,它给 $ X $ 的每一元素指定 $ Y $ 的唯一对应元素.若 $ y\in Y $ 是 $ x\in X $ 的对应元素,就写 $ y=f(x) $ ,并称 $ y $ 为 $ x $ 在映射 $ f $ 下的像(image),称 $ x $ 为原像或者逆像(inverse image).
+- 设集合 $ X,Y $ 非空.一个从 $ X $ 到 $ Y $ 的映射是一个法则,它给 $ X $ 的每一元素指定 $ Y $ 的唯一对应元素.若 $ y\in Y $ 是 $ x\in X $ 的对应元素,就写 $ y=f(x) $ ,并称 $ y $ 为 $ x $ 在映射 $ f $ 下的**像**(image),称 $ x $ 为**原像**或者逆像(inverse image). $ X $ 称为映射 $ f $ 的**定义域**(domain), $ X $ 的全体元素在映射 $ f $ 下的像的集合 $ f[x] $ 称为映射 $ f:X\to Y $ 的**值域**(range).
 
- $ X $ 称为映射 $ f $ 的定义域(domain), $ X $ 的全体元素在映射 $ f $ 下的像的集合 $ f[x] $ 称为映射 $ f:X\to Y $ 的值域(range).
+> 映射天生就要求 $ x\in X $ 的对应物 $ y \in Y $是唯一.至于是一对一还是多对一那不管,这也为下面细分映射类型埋下伏笔.
+> 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),丘维生教授在国内首先将其译作“培域”.显然, 
+$f[x] \subset Y .$
+{: .prompt-warning }
+
+
 
 映射 $ f:X\to Y $ 和 $ f':X\to Y $ 称为相等的,若 $ \forall x\in X,f(x)=f'(x) $ .
 
