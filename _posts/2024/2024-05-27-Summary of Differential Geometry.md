@@ -196,7 +196,7 @@ $f[x] \subset Y .$
 
 >  $ \mathbb{R}^n $ 的通常拓扑中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.$ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
 >
-> ![诱导拓扑的一个简单例子](\assets\img\in-post\2024\youdaotuopu.jpg)
+> ![诱导拓扑的一个简单例子](/assets/img/in-post/2024/youdaotuopu.jpg)
 > 
 > 如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0\mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
 >
