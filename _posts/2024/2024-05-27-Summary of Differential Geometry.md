@@ -178,7 +178,7 @@ $f[x] \subset Y .$
 定义了拓扑结构的集合 $ X $ 的全体开子集组成一个集合,称为 $ X $ 的一个**拓扑**(topology),记作 $ \mathscr{T} $ .
 
 - 拓扑用数学语言表述为:非空集合 $ X $ 的一个拓扑 $ \mathscr{T} $ 是 $ X $ 的若干子集的集合,满足:
-1.  $ X,\emptyset \in \mathscr{T}; . $ 
+1.  $ X,\emptyset \in \mathscr{T}. $ 
 2. 若 $ O_i\in \mathscr{T},i=1,\cdots,n $ ,则 $ \bigcap\limits_{i=1}^n O_i\in \mathscr{T}. $ 
 3. 若 $ \forall \alpha,O_\alpha \in \mathscr{T} $ ,则 $ \bigcup\limits_{\alpha}O_\alpha\in \mathscr{T}. $ 
 
@@ -196,7 +196,7 @@ $f[x] \subset Y .$
 
 >  $ \mathbb{R}^n $ 的通常拓扑中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.$ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
 >
-> <img src="https://metricfield.github.io/assets/img/in-post/2024/2024-05-27.png" alt="诱导拓扑的一个简单例子">
+> <img src="https://metricfield.github.io/assets/img/in-post/2024/诱导拓扑.png" alt="诱导拓扑的一个简单例子">
 > 如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0 \mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
 
 >显然,离散拓扑元素最多，而凝聚拓扑元素最少.
