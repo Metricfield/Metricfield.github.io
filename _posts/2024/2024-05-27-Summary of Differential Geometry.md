@@ -10,7 +10,10 @@ description: This article records the content of differential geometry from the 
 
 在这里,我将会*简明扼要*地摘录《微分几何入门与广义相对论》(上册)1-5章,微分几何相关的概念、定理以及公式等.为了更快地掌握(至少熟悉)微分几何的语言,我们不得不暂时先略去相关的数学证明,而这在书上以及[梁灿彬老师的现场教学](https://www.bilibili.com/video/BV1qF411t72r/?spm_id_from=333.337.search-card.all.click)上都有所涉及.
 
-除正文以外,本文还有如下环境:
+除正文以外,本文还有如下环境
+
+> 这是用来表示“建议”或者“提示”的,通常与本文内容无关,可以略去不看.
+{: .prompt-tip }
 
 > 这用来表示作者(即梁和周)的“注记”,是书里面提到过的,并且有助于深刻理解的内容.
 {: .prompt-info }
