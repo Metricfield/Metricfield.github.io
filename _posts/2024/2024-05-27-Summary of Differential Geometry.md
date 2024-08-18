@@ -54,7 +54,7 @@ description: This article records the content of differential geometry from the 
 
 >规定卡氏积满足结合律: $ (X\times Y)\times Z=X\times (Y\times Z). $ 
 
- $ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离定义为$$|y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}.$$
+ $ \mathbb{R}^n:=\mathbb{R}\times \cdots\times\mathbb{R} $ 的任意两个元素 $ x=(x^1,\cdots,x^n),y=(y^1,\cdots,y^n) $ 之间的距离定义为 \$\$ |y-x|:=\sqrt{\sum\limits_{i=1}^n(y^i-x^i)^2}. \$\$ 
 
 #### 映射
    
@@ -148,9 +148,9 @@ description: This article records the content of differential geometry from the 
   > 其中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n||x-x_0|<r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.\
   >  $ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
   
-4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为$$\mathscr{T}:=\{O\subset X|O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{{T}_2}\}$$则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑(product topology)**.
-5. 设 $ (X,\mathscr{T}) $ 是拓扑空间, $ A $ 为 $ X $ 的任一非空子集.把 $ A $ 看成集合,指定拓扑 $ \mathscr{S} $ 为$$
-\mathscr{S}:=\{V\subset A|\exists\ O\in \mathscr{T}s.t.V=A\cap O\},$$
+4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 \$\$ \mathscr{T}:=\{O\subset X|O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{{T}_2}\} \$\$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑(product topology)**.
+5. 设 $ (X,\mathscr{T}) $ 是拓扑空间, $ A $ 为 $ X $ 的任一非空子集.把 $ A $ 看成集合,指定拓扑 $ \mathscr{S} $ 为 \$\$ 
+\mathscr{S}:=\{V\subset A|\exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \$\$ 
 这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑(induced topology).**  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间(topological subspace)**.
 
 >
@@ -213,11 +213,11 @@ description: This article records the content of differential geometry from the 
 
 #### 闭包、内部和边界
 
- $ A $ 的**闭包(closure)** $ \bar{A} $ 是所有含 $ A $ 的闭集的交集,即$$\bar{A}:=\bigcap_{\alpha}C_\alpha,A\subset C_\alpha,\text{且}C_\alpha\text{为闭}.$$
+ $ A $ 的**闭包(closure)** $ \bar{A} $ 是所有含 $ A $ 的闭集的交集,即 \$\$ \bar{A}:=\bigcap_{\alpha}C_\alpha,A\subset C_\alpha,\text{且}C_\alpha\text{为闭}. \$\$ 
 
 > $ \bar{A} $ 是含 $ A $ 的最小闭集.
 
- $ A $ 的**内部(interior)** $ i(A) $ 是所有含于 $ A $ 的开集的并集,即$$i({A}):=\bigcup_{\alpha}O_\alpha,O_\alpha\subset A,O_\alpha \in \mathscr{T}.$$
+ $ A $ 的**内部(interior)** $ i(A) $ 是所有含于 $ A $ 的开集的并集,即 \$\$ i({A}):=\bigcup_{\alpha}O_\alpha,O_\alpha\subset A,O_\alpha \in \mathscr{T}. \$\$ 
 或者集合 $ A $ 的内部 $ i(A) $ 是 $ A $ 的闭包 $ \bar{A} $ 的所有开子集的并集.
 
 > $ i(A) $ 是 $ A $ 的最大开子集.
@@ -249,7 +249,7 @@ description: This article records the content of differential geometry from the 
 >  $ \mathbb{R} $ 中任一开区间或者半开区间都非紧致.\
 >  $ \mathbb{R} $ 的任一闭区间都紧致.
 
-拓扑空间 $ (X,\mathscr{T}) $ 叫做 $ \mathbf{T}_2 $ 或者 **豪斯多夫空间(Hausdorff space)**,若$$\forall x,y\in X.x\neq y,\exists \ O_1,O_2\in \mathscr{T},s.t. x\in O_1,y\in O_2,O_1\cap O_2=\emptyset .$$
+拓扑空间 $ (X,\mathscr{T}) $ 叫做 $ \mathbf{T}_2 $ 或者 **豪斯多夫空间(Hausdorff space)**,若 \$\$ \forall x,y\in X.x\neq y,\exists \ O_1,O_2\in \mathscr{T},s.t. x\in O_1,y\in O_2,O_1\cap O_2=\emptyset . \$\$ 
 通俗来说就是, $ \mathbf{T}_2 $ 空间任两不同点有不相交的邻域.
 豪斯多夫空间中的点都是闭子集.
 
@@ -296,7 +296,7 @@ description: This article records the content of differential geometry from the 
 
 #### Cauchy 系列与完备性
 
-在度量空间 $ (S，\rho) $ 中的 $ Cauchy $ 序列是指存在这样一个无限多点系列 $ \{x,n=1,2,\cdots,\infty\} $ 满足条件:$$\lim\limits_{n,m\to 0}d(x_m,x_n)=0$$通俗来说就是对于预先给定的一个小正数 $ \varepsilon >0 $ ,总存在足够大的整数 $ N $ ,当 $ n,m>N $ 时,相应两点 $ x_n,x_m $ 距离 $ d(x_m,x_n)<\varepsilon $ .
+在度量空间 $ (S，\rho) $ 中的 $ Cauchy $ 序列是指存在这样一个无限多点系列 $ \{x,n=1,2,\cdots,\infty\} $ 满足条件: \$\$ \lim\limits_{n,m\to 0}d(x_m,x_n)=0 \$\$ 通俗来说就是对于预先给定的一个小正数 $ \varepsilon >0 $ ,总存在足够大的整数 $ N $ ,当 $ n,m>N $ 时,相应两点 $ x_n,x_m $ 距离 $ d(x_m,x_n)<\varepsilon $ .
 
 度量空间 $ (S，\rho) $ 中若每个 $ Cauchy $ 序列都在空间 $ S $ 上具有收敛点,则称其为完备的.
 
@@ -362,13 +362,13 @@ description: This article records the content of differential geometry from the 
 
 设 $ (O,\psi) $ 是坐标系,其坐标为 $ x^\mu $ ,则 $ M $ 上任一光滑函数 $ f\in \mathscr{F}_M $ 与
  $ (O,\psi) $ 结合得到 $ n $ 元函数 $ F(x^1,\cdots,x^n) $ ,借此可以给 $ O $ 中任一点 $ p $ 定义 $ n $ 个矢量,记作 $ X_\mu,\mu=1,\cdots,n $ ,它们作用于任一  $ f\in\mathscr{F}_M $ 定义为:
-$$X_\mu(f):=\left.\dfrac{\partial F(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\left.\dfrac{\partial f(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\left.\dfrac{\partial f(x)}{\partial x^\mu}\right|_p,\forall f\in\mathscr{F}_M$$
+ \$\$ X_\mu(f):=\left.\dfrac{\partial F(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\left.\dfrac{\partial f(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\left.\dfrac{\partial f(x)}{\partial x^\mu}\right|_p,\forall f\in\mathscr{F}_M \$\$ 
 
 设 $ M $ 的维数为 $ n $ ,以 $ V_p $ 代表 $ M $ 中 $ p $ 点所有矢量的集合,则 $ V_p $ 是 $ n $ 维向量空间.
 
 坐标域内任一点 $ p $ 的 $ \{X_1,\cdots,X_n\} $ 称为 $ V_p $ 的一个**坐标基底(coordinate basis)**,每个 $ X_\mu $ 称为一个**坐标基矢(coordinate basis vector)**, $ v\in V_p $ 以 $ \{X_\mu\} $ 线性表出的系数 $ v^\mu $ 称为 $ v $ 的**坐标分量(coordinate components)**.
 
-设 $ \{x^\mu\} $ 和 $ \{x^{\prime \nu}\} $ 为两个坐标系,其坐标域的交集非空, $ p $ 为交集中一点, $ v\in V_p,\{v^\mu\} $ 和 $ \{v^{\prime \nu}\} $ 是 $ v $ 在这两个系里面的坐标分量,则有$$v^{\prime\nu}=\left.\dfrac{\partial x^{\prime\nu}}{\partial x^\mu}\right|_p v^\mu,$$
+设 $ \{x^\mu\} $ 和 $ \{x^{\prime \nu}\} $ 为两个坐标系,其坐标域的交集非空, $ p $ 为交集中一点, $ v\in V_p,\{v^\mu\} $ 和 $ \{v^{\prime \nu}\} $ 是 $ v $ 在这两个系里面的坐标分量,则有 \$\$ v^{\prime\nu}=\left.\dfrac{\partial x^{\prime\nu}}{\partial x^\mu}\right|_p v^\mu, \$\$ 
 其中 $ x^{\prime\nu} $ 是两坐标系间变换函数 $ x^{\prime\nu}(x^\sigma) $ 的简写.上式称为**矢量的分量变换式**.
 
 #### 曲线
@@ -387,17 +387,17 @@ $$X_\mu(f):=\left.\dfrac{\partial F(x^1,\cdots,x^n)}{\partial x^\mu}\right|_p=\l
 #### 切矢
 
 设 $ C(t) $ 是流形 $ M $ 上的 $ C^1 $ 曲线,则线上 $ C(t_0) $ 点的切于 $ C(t) $ 点的**切矢(tangent vector)** $ T $ 是 $ C(t_0) $ 点的矢量,它对 $ f\in \mathscr{F}_M $ 的作用定义为:
-$$\left.T(f):=\dfrac{d(f\circ C)}{dt}\right|_{t_0}=\left.\dfrac{\partial}{\partial t}\right|_{C(t_0)}(f)=\left.\dfrac{df(C(t))}{dt}\right|_{t_0},\forall f\in \mathscr{F}_M.$$
+ \$\$ \left.T(f):=\dfrac{d(f\circ C)}{dt}\right|_{t_0}=\left.\dfrac{\partial}{\partial t}\right|_{C(t_0)}(f)=\left.\dfrac{df(C(t))}{dt}\right|_{t_0},\forall f\in \mathscr{F}_M. \$\$ 
 
 >  $ f:M\to\mathbb{R} $ 是 $ M $ 上的函数(标量场),不是什么一元函数,但与曲线 $ C:I\to M $ 的结合 $ f\circ M $ 则是以 $ t $ 为自变量的一元函数,也可记作 $ f(C(t)) $ .
 
 设曲线 $ C(t) $ 在某坐标系中的参数式为 $ x^\mu=x^\mu(t) $ ,则线上任一点的切矢 $ \frac{\partial}{\partial t} $ 在该坐标基底的展开式为:
-$$\dfrac{\partial }{\partial t}=\dfrac{d x^\mu(t)}{d t}\dfrac{\partial}{\partial x^\mu},$$即曲线 $ C(t) $ 的切矢 $ \frac{\partial}{\partial t} $ 的坐标分量是 $ C(t) $ 在该系的参数式 $ x^\mu(t) $ 对 $ t $ 的导数.
+ \$\$ \dfrac{\partial }{\partial t}=\dfrac{d x^\mu(t)}{d t}\dfrac{\partial}{\partial x^\mu}, \$\$ 即曲线 $ C(t) $ 的切矢 $ \frac{\partial}{\partial t} $ 的坐标分量是 $ C(t) $ 在该系的参数式 $ x^\mu(t) $ 对 $ t $ 的导数.
 
 非零矢量 $ v,u\in V_p $ 称为互相**平行(parallel)**的,若 $ \exists \alpha \in \mathbb{R}s.t.v=\alpha u. $ 
 
 设曲线 $ C^\prime:I^\prime\to M $ 是 $ C:I\to M $ 的重参数化,则两者在任一像点的切矢 $ \frac{\partial }{\partial t} $ 和 $ \frac{\partial }{\partial t^\prime} $ 具有如下关系:
-$$\dfrac{\partial }{\partial t}=\dfrac{d t^\prime(t)}{d t}\dfrac{\partial}{\partial t^\prime},$$
+ \$\$ \dfrac{\partial }{\partial t}=\dfrac{d t^\prime(t)}{d t}\dfrac{\partial}{\partial t^\prime}, \$\$ 
 其中 $ t^\prime(t) $ 是由映射 $ \alpha:I\to I^\prime $ 诱导而得到的一元函数 $ \alpha(t) $ .
 
  $ V_p $ 中任一元素可以视为过 $ p $ 的某曲线的切矢,因此 $ p $ 点的矢量亦称为**切矢量**, $ v $ 称为 $ p $ 点的**切空间**.
@@ -409,14 +409,14 @@ $$\dfrac{\partial }{\partial t}=\dfrac{d t^\prime(t)}{d t}\dfrac{\partial}{\part
 >设 $ v $ 是 $ M $ 上的矢量场, $ f $ 是 $ M $ 上的函数,则 $ v $ 在 $ M $ 的任一点 $ p $ 的值 $ v|_p $ 将把 $ f $ 映射
 为一个实数 $ v|_{p}(f) $ ,它在 $ p $ 点遍历 $ M $ 时构成 $ M $ 上的一个函数 $ v(f) $ .因此,矢量场 $ v $ 可以视为函数 $ f $ 到函数 $ v(f) $ 的映射.
 
- $ M $ 上的矢量场 $ v $ 称为** $ C^\infty $ 类(光滑的)**,若 $ v $ 作用于 $ C^\infty $ 类函数的结果为 $ C^\infty $ 类函数,即 $ v(f)\in\mathscr{F}_M,\forall f\in \mathscr{F}_M.$$v $ 称为** $ C^r $ 类**,若 $ v $ 作用于 $ C^r $ 类函数的结果为 $ C^r $ 类函数.
+ $ M $ 上的矢量场 $ v $ 称为** $ C^\infty $ 类(光滑的)**,若 $ v $ 作用于 $ C^\infty $ 类函数的结果为 $ C^\infty $ 类函数,即 $ v(f)\in\mathscr{F}_M,\forall f\in \mathscr{F}_M. \$\$ v $ 称为** $ C^r $ 类**,若 $ v $ 作用于 $ C^r $ 类函数的结果为 $ C^r $ 类函数.
 
 坐标基矢 $ \{X_\mu\equiv\dfrac{\partial}{\partial x^\mu}\} $ 构成坐标域上的 $ n $ 个光滑矢量场,叫做**坐标基矢场**.
 
  $ M $ 上矢量场 $ v $ 是 $ C^\infty(C^r) $ 类的充要条件是它在任一坐标基底的分量 $ v^\mu $ 为 $ C^\infty(C^r) $ 类函数.
 
 两个光滑矢量场 $ u,v $ 的**对易子(commutator)**是一个光滑矢量场 $ [u,v] $ ,定义为:
-$$[u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M.$$
+ \$\$ [u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M. \$\$ 
 
 >设 $ \{x^\mu\} $ 为任一坐标系,则 $ \left[\dfrac{\partial}{\partial x^\mu},\dfrac{\partial}{\partial x^\nu}\right]=0,\mu,\nu=1,\cdots,n. $ 
 
@@ -450,12 +450,12 @@ $$[u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M.$$
 
 定义 $ v^{**}(\omega):=\omega(v),\forall \omega \in V^* $ ,于是映射 $ V\to V^{**} $ 为同构映射,表明 $ V,V^{**} $ 可以视为同一空间.
 
-若矢量空间 $ V $ 中有一个基底变换 $ e_\mu^\prime=A^\nu{}_\mu e_\nu,A^\nu{}_\mu $ 是新基矢 $ e^\prime_\mu $ 用原来基底展开的第 $ \nu $ 个分量.以 $ A^\nu{}_\mu $ 为元素排成的非退化方针记作 $ A $ ,则相应的基底变换为:$$e^{\prime\mu*}=(\tilde{A}^{-1})_\nu{}^\mu e^{\nu*},$$
+若矢量空间 $ V $ 中有一个基底变换 $ e_\mu^\prime=A^\nu{}_\mu e_\nu,A^\nu{}_\mu $ 是新基矢 $ e^\prime_\mu $ 用原来基底展开的第 $ \nu $ 个分量.以 $ A^\nu{}_\mu $ 为元素排成的非退化方针记作 $ A $ ,则相应的基底变换为: \$\$ e^{\prime\mu*}=(\tilde{A}^{-1})_\nu{}^\mu e^{\nu*}, \$\$ 
 其中 $ \tilde{A} $ 是 $ A $ 的转置矩阵, $ \tilde{A}^{-1} $ 是 $ \tilde{A} $ 之逆.
 
 若在 $ M $ 或者 $ A\subset M $ 上每点指定一个对偶矢量,就得到 $ M $ 或者 $ A $ 上的一个**对偶矢量场**. $ M $ 上的对偶矢量场 $ \omega $ 称为**光滑的**,若 $ \forall \text{光滑矢量场}v,\omega(v)\in \mathscr{F}_M. $ 
 
-设 $ f\in \mathscr{F}_M,f $ 自然诱导出 $ M $ 上的一个对偶矢量场,记作 $ df $ ,满足$$df|_p(v):=v(f),\forall v\in V_p.$$
+设 $ f\in \mathscr{F}_M,f $ 自然诱导出 $ M $ 上的一个对偶矢量场,记作 $ df $ ,满足 \$\$ df|_p(v):=v(f),\forall v\in V_p. \$\$ 
 
 ---
 
@@ -463,7 +463,7 @@ $$[u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M.$$
 
 #### 张量、张量积
 
-矢量空间 $ V $ 上的一个** $ (k,l) $ 型张量**(tensor of type(k,l))是一个多重线性映射:$$T:\underbrace{V^*\times \cdots \times V^*}_{k\text{个}}\times \underbrace{V\times \cdots \times V}_{l\text{个}}\to \mathbb{R}.$$
+矢量空间 $ V $ 上的一个** $ (k,l) $ 型张量**(tensor of type(k,l))是一个多重线性映射: \$\$ T:\underbrace{V^*\times \cdots \times V^*}_{k\text{个}}\times \underbrace{V\times \cdots \times V}_{l\text{个}}\to \mathbb{R}. \$\$ 
 
 >  $ V $ 上的对偶矢量是 $ (0,1) $ 型张量,因为对偶矢量是 $ V\to\mathbb{R} $ 的映射.\
 >  $ v\in V $ 可视为 $ V $ 上的(1,0)型张量,因为 $ v $ 可以视为 $ v^{**},而 $ v^{**} $ 是 $ V^*\to\mathbb{R} $ 的映射.
@@ -474,11 +474,11 @@ $$[u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M.$$
    2.  $ T $ 将对偶矢量 $ \omega $ 线性映射为对偶矢量 $ T(\omega;*) $ ,即 $ T:V^*\to V^* $ ;
    3.  $ T $ 将矢量 $ v $ 线性映射为矢量 $ T(*;v) $ ,即 $ T:V\to V $ .
 
- $ V $ 上的 $ (k,l) $ 和 $ (k^\prime,l^\prime) $ 型张量 $ T $ 和 $ T^\prime $ 的**张量积**(tensor product) $ T\otimes T^\prime $ 是一个 $ (k+k^\prime,l+l^\prime) $ 型张量,定义为$$
+ $ V $ 上的 $ (k,l) $ 和 $ (k^\prime,l^\prime) $ 型张量 $ T $ 和 $ T^\prime $ 的**张量积**(tensor product) $ T\otimes T^\prime $ 是一个 $ (k+k^\prime,l+l^\prime) $ 型张量,定义为 \$\$ 
 \begin{aligned}
 &T\otimes T^\prime(\omega^1,\cdots,\omega^k,\omega^{k+1},\cdots,\omega^{k+k^\prime};v_1,\cdots,v_l,v_{l+1},\cdots,v_{l+l^\prime})\\
 &:=T(\omega^1,\cdots,\omega^k;v_1,\cdots,v_l)T^\prime(\omega^{k+1},\cdots,\omega^{k+k^\prime};v_{l+1},\cdots,v_{l+l^\prime}).
-\end{aligned}$$
+\end{aligned} \$\$ 
 
 >欧氏空间中的并矢 $ \mathbf{vu} $ 实际上是 $ \mathbf{v} $ 与 $ \mathbf{u} $ 的张量积,不满足交换律,即 $ \mathbf{vu}\neq\mathbf{uv} $ .一般而言,两个矢量或者两个对偶矢量的张量积都不满足交换律.\
 > 量子力学中的 $ |{\psi}\rangle|{\phi}\rangle $ 也是 $ |{\psi}\rangle $ 与 $ |{\phi}\rangle $ 的张量积,只不过 $ |{\psi}\rangle $ 与 $ |{\phi}\rangle $ 所在的矢量空间是复数域上的无限维矢量空间.
@@ -489,10 +489,10 @@ $$[u,v]|_p(f):=u(v(f))-v(u(f)),\forall f \in\mathscr{F}_M.$$
 >
 > 同一 $ T $ 在任意两个基底的分量对应的两个矩阵 $ (T^\mu{}_\nu),(T^{\prime \mu}{}_\nu) $ 互为相似矩阵.
 
-同一(1,1)型张量 $ T $ 在不同基底的矩阵有相同的迹 $ T^\mu{}_\mu $ ,通常称为 $ T $ 的**缩并**(contraction),暂记作 $ CT $ ,即$$CT:=T^\mu{}_\mu=T(e^{\mu*};e_\mu).$$
+同一(1,1)型张量 $ T $ 在不同基底的矩阵有相同的迹 $ T^\mu{}_\mu $ ,通常称为 $ T $ 的**缩并**(contraction),暂记作 $ CT $ ,即 \$\$ CT:=T^\mu{}_\mu=T(e^{\mu*};e_\mu). \$\$ 
 
  $ T\in \mathscr{T}_V(k,l) $ 的第 $ i $ 上标 $ (i\leqslant k) $ 与第 $ j $ 下标 $ (j\leqslant l) $ 的**缩并**定义为:
-$$C_j^iT:=T(\cdot,\cdots,\underset{\text{第 $ i $ 上槽}}{e^{\mu*}},\cdot,\cdots;\cdot,\cdots,\underset{\text{第 $ j $ 下槽}}{e_\mu},\cdot,\cdots)\in\mathscr{T}_V(k-1,l-1)(\text{对 $ \mu $ 求和}).$$
+ \$\$ C_j^iT:=T(\cdot,\cdots,\underset{\text{第 $ i $ 上槽}}{e^{\mu*}},\cdot,\cdots;\cdot,\cdots,\underset{\text{第 $ j $ 下槽}}{e_\mu},\cdot,\cdots)\in\mathscr{T}_V(k-1,l-1)(\text{对 $ \mu $ 求和}). \$\$ 
 
 >  $ C_j^iT $ 与基底选择无关.
 
@@ -510,8 +510,8 @@ $$C_j^iT:=T(\cdot,\cdots,\underset{\text{第 $ i $ 上槽}}{e^{\mu*}},\cdot,\cdo
 
 若在流形 $ M $ 上每点指定一个 $ (k,l) $ 型张量,就得到 $ M $ 上的一个 $ (k,l) $ 型**张量场**, $ M $ 上的张量场 $ T $ 称为**光滑的**,若对于光滑对偶矢量场 $ \omega^1,\cdots,\omega^k $ 及光滑矢量场 $ v_1,\cdots,v_l $ 有 $ T(\omega^1,\cdots,\omega^k;v_1,\cdots,v_l)\in \mathscr{F}_M. $ 
 
- $ (k,l) $ 型张量在两个坐标系中的分量的变换关系为$$
-T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial x^{\prime\mu_1}}{\partial x^{\rho_1}}\cdots\dfrac{\partial x^{\sigma_l}}{\partial x^{\prime \nu_l}}T^{\rho_1\cdots\rho_k}{}_{\sigma_1\cdots\sigma_l}.$$
+ $ (k,l) $ 型张量在两个坐标系中的分量的变换关系为 \$\$ 
+T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial x^{\prime\mu_1}}{\partial x^{\rho_1}}\cdots\dfrac{\partial x^{\sigma_l}}{\partial x^{\prime \nu_l}}T^{\rho_1\cdots\rho_k}{}_{\sigma_1\cdots\sigma_l}. \$\$ 
 
 ---
 
@@ -534,14 +534,14 @@ T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial x^{\prime\mu_1}}
 矢量 $ u,v\in V $ 称为**相互正交的**,若 $ g(v,u)=0 $ ;
 
  $ V $ 的基底 $ \{e_\mu\} $ 叫做**正交归一的**,若任两个基矢正交且每一基矢 $ e_\mu $ 满足 $ g(e_\mu,e_\mu)=\pm 1 $ (不对 $ \mu $ 求和).即度规 $ g $ 在正交归一基底的分量满足:
-$$g_{\mu \nu}
+ \$\$ g_{\mu \nu}
 =\left\{
 \begin{aligned}
 0,\mu\neq\nu\\
 \pm 1,\mu=\nu
 \end{aligned}
 \right.
-$$
+ \$\$ 
 因此,度规在正交归一基底的分量排成的矩阵是对角阵,对角元为+1或者-1.
 
 >度规 $ g $ 与一般内积的区别在于 $ g(v,v) $ 可以为负,且 $ g(v,v)=0 $ 并不意味着 $ v=0 $ .
@@ -569,13 +569,13 @@ $$
 
  $ M $ 上的对称的、处处非退化的(0,2)型张量场称为**度规张量场**.
 
-设 $ C(t) $ 是带有正定度规场 $ g $ 的任意流形 $ M $ 上任一 $ C^1 $ 曲线, $ T $ 是其切矢.即 $ T\equiv \dfrac{\partial}{\partial t} $ ,则 $ |T|=\sqrt{g(T,T)} $ , $ C(t) $ 的线长自然定义为$$l:=\int\sqrt{g(T,T)}d t.$$
+设 $ C(t) $ 是带有正定度规场 $ g $ 的任意流形 $ M $ 上任一 $ C^1 $ 曲线, $ T $ 是其切矢.即 $ T\equiv \dfrac{\partial}{\partial t} $ ,则 $ |T|=\sqrt{g(T,T)} $ , $ C(t) $ 的线长自然定义为 \$\$ l:=\int\sqrt{g(T,T)}d t. \$\$ 
 
-设流形 $ M $ 上有洛伦兹度规场 $ g $ ,则 $ M $ 上的类空、类光以及类时曲线 $ C(t) $ 的线长定义为$$l:=\sqrt{|g(T,T)|}d t,T\equiv\dfrac{\partial}{\partial t}.$$
+设流形 $ M $ 上有洛伦兹度规场 $ g $ ,则 $ M $ 上的类空、类光以及类时曲线 $ C(t) $ 的线长定义为 \$\$ l:=\sqrt{|g(T,T)|}d t,T\equiv\dfrac{\partial}{\partial t}. \$\$ 
 
 >曲线的线长与其参数化无关,曲线重参数化(保持映射的像不变而适当改变参数)不改变线长.
 
-定义**线元**(line element) $ ds^2 $ 为$$ds^2\equiv g_{\mu\nu}dx^\mu dx^\nu$$
+定义**线元**(line element) $ ds^2 $ 为 \$\$ ds^2\equiv g_{\mu\nu}dx^\mu dx^\nu \$\$ 
 
 >  从线元表达式可以直接读出度规全体坐标分量,给定线元表达式相当于给定度规场.
 
@@ -583,16 +583,16 @@ $$
 
 - 若 $ g $ 正定,叫做**黎曼空间**;
 
->欧氏空间是最简单的黎曼空间.设 $ \{x^\mu\} $ 是 $ \mathbb{R}^n $ 的自然坐标,在 $ \mathbb{R}^n $ 上定义度规张量场 $ \delta $ 为$$\delta:=\delta_{\mu \nu}dx^\mu\otimes dx^\nu,$$
+>欧氏空间是最简单的黎曼空间.设 $ \{x^\mu\} $ 是 $ \mathbb{R}^n $ 的自然坐标,在 $ \mathbb{R}^n $ 上定义度规张量场 $ \delta $ 为 \$\$ \delta:=\delta_{\mu \nu}dx^\mu\otimes dx^\nu, \$\$ 
 则 $ (\mathbb{R},\delta) $ 称为**n维欧氏空间**(n-dimensional Euclidean space), $ \delta $ 为欧式度规.\
->  $ n $ 维欧氏空间中满足$$\delta\left(\dfrac{\partial}{\partial x^\alpha},\dfrac{\partial}{\partial x^\beta}\right)=\delta_{\alpha\beta}$$
+>  $ n $ 维欧氏空间中满足 \$\$ \delta\left(\dfrac{\partial}{\partial x^\alpha},\dfrac{\partial}{\partial x^\beta}\right)=\delta_{\alpha\beta} \$\$ 
 > 的坐标系称为**笛卡尔坐标系**或者**直角坐标系**.即一个坐标系叫做笛卡尔坐标系,若其坐标基底以欧式度规 $ \delta $ 衡量为正交归一.
 
 - 若 $ g $ 为洛伦兹,叫做**伪黎曼空间**,物理上叫做**时空**.
 
->闵氏空间是最简单的伪黎曼空间.设 $ \{x^\mu\} $ 是 $ \mathbb{R}^n $ 的自然坐标,在 $ \mathbb{R}^n $ 上定义度规场 $ \eta $ 为$$\eta:=\eta_{\mu\nu}dx^\mu \otimes dx^\nu,$$
+>闵氏空间是最简单的伪黎曼空间.设 $ \{x^\mu\} $ 是 $ \mathbb{R}^n $ 的自然坐标,在 $ \mathbb{R}^n $ 上定义度规场 $ \eta $ 为 \$\$ \eta:=\eta_{\mu\nu}dx^\mu \otimes dx^\nu, \$\$ 
 则 $ (\mathbb{R}^4,\eta) $ 称为**n维闵氏(Minkowski)空间**, $ \eta $ 为**闵氏度规**.\
- $ n $ 维闵氏空间中满足$$\eta\left(\dfrac{\partial}{\partial x^\alpha} ,\dfrac{\partial}{\partial x^\beta}\right)=\eta_{\alpha\beta},$$
+ $ n $ 维闵氏空间中满足 \$\$ \eta\left(\dfrac{\partial}{\partial x^\alpha} ,\dfrac{\partial}{\partial x^\beta}\right)=\eta_{\alpha\beta}, \$\$ 
 的坐标系称为**洛伦兹坐标系**或者**伪笛卡尔坐标系**.
 
 ---
@@ -623,17 +623,17 @@ $$
  $ T\in \mathscr{T}_V(0,2) $ 
 称为**对称的**(symmetric),若 $ T(u,v)=T(v,u),\forall u,v \in V. $ 
 
-  (0,2)型张量 $ T_{ab} $ 的对称部分 $ T_{(ab)} $ 和反对称部分 $ T_{[ab]} $ 定义为$$
+  (0,2)型张量 $ T_{ab} $ 的对称部分 $ T_{(ab)} $ 和反对称部分 $ T_{[ab]} $ 定义为 \$\$ 
   T_{(ab)}:=\dfrac{1}{2}(T_{ab}+T_{ba});  T_{[ab]}:=\dfrac{1}{2}(T_{ab}-T_{ba}).
-  $$
+   \$\$ 
 
 一般地, $ (0,l) $ 型张量 $ T_{a_1\cdots a_l} $ 的对称和反对称部分定义为
-$$
+ \$\$ 
 \begin{aligned}
 T_{(a_1\cdots a_l)}&:=\dfrac{1}{l!}\sum\limits_{\pi}T_{a_{\pi(1)}\cdots a_{\pi(l)}},\\
 T_{[a_1\cdots a_l]}&:=\dfrac{1}{l!}\sum\limits_{\pi}\delta_\pi T_{a_{\pi(1)}\cdots a_{\pi(l)}},\\
 \end{aligned}
-$$
+ \$\$ 
 其中 $ \pi $ 表示 $ (1,\cdots,l) $ 的一种排列, $ \pi(1) $ 代表该排列中的第一个数字, $ \sum\limits_\pi $ 表示对各种排列取和, $ \delta_\pi=\pm 1 $ ,偶排列取正,奇排列取负.
 
 
@@ -668,20 +668,20 @@ $$
 
 - 以 $ \mathscr{F}_M(k,l) $ 代表流形 $ M $ 上全体 $ C^\infty $ 的 $ (k,l) $ 型张量场的集合.映射 $ \nabla:\mathscr{F}_M(k,l)\to\mathscr{F}_M(k,l+1) $ 称为 $ M $ 上的**(无挠)导数算符**(derivative operator),若满足以下条件:
 
-1. 具有线性性:$$
+1. 具有线性性: \$\$ 
   \begin{aligned}
   &\nabla_a(\alpha T^{b_1,\cdots,b_k}{}_{c_1\cdots c_l}+\beta S^{b_1\cdots b_k}{}_{c_1\cdots c_l})=\alpha \nabla_\alpha T^{b_1\cdots b_k}{}_{c_1\cdots c_l}+\beta\nabla_a S^{b_1\cdots b_k}{}_{c_1\cdots c_l},\\
   & \forall T^{b_1,\cdots,b_k}{}_{c_1\cdots c_l}, S^{b_1\cdots b_k}{}_{c_1\cdots c_l}\in \mathscr{F}_M(k,l),\alpha,\beta \in \mathbb{R};
   \end{aligned}
-  $$
+   \$\$ 
 2. 满足莱布尼茨律:
-  $$
+   \$\$ 
   \begin{aligned}
   & \nabla_a(T^{b_1\cdots b_k}{}_{c_1\cdots c_l}S^{d_1\cdots d_{k^\prime}}{}_{e_1\cdots e_{l^\prime}})=T^{b_1\cdots b_k}{}_{c_1\cdots c_l}\nabla_a S^{d_1\cdots d_{k^\prime}}{}_{e_1\cdots e_{l^\prime}}\\
   &+S^{d_1\cdots d_{k^\prime}}{}_{e_1\cdots e_{l^\prime}}\nabla_aT^{b_1\cdots b_k}{}_{c_1\cdots c_l},\\
   &\forall T^{b_1\cdots b_k}{}_{c_1\cdots c_l }\in \mathscr{F}_M(k,l) ,S^{d_1\cdots d_{k^\prime}}{}_{e_1\cdots e_{l^\prime}}\in\mathscr{F}_M(k^\prime,l^\prime);
   \end{aligned}
-  $$
+   \$\$ 
 3. 与缩并可以交换顺序.设 $ C $ 表示缩并,则有 $ \nabla \circ C=C\circ \nabla. $ 
 
 >等价为 $ \nabla_a\delta^b{}_c=0,\delta^b{}_c $ 视为 $ (1,1) $ 型张量场,其在每点 $ p\in M $ 定义为 $ \delta^b{}_cv^c=v^b,\forall v^c \in V_p. $ 
@@ -695,51 +695,51 @@ $$
   
 > 满足条件1-4但不满足条件5的导数算符称为**有挠导数算符**,广义相对论中只使用无挠导数算符.
 >
-> >条件5实际上是下式的抽象指标表述$$(\nabla\nabla f)(u,v)=(\nabla\nabla f)(v,u),\forall u,v\in \mathscr{F}(1,0),$$亦即 $ \nabla\nabla f $ 是一个对称的 $ (0,2) $ 型张量.
+> >条件5实际上是下式的抽象指标表述 \$\$ (\nabla\nabla f)(u,v)=(\nabla\nabla f)(v,u),\forall u,v\in \mathscr{F}(1,0), \$\$ 亦即 $ \nabla\nabla f $ 是一个对称的 $ (0,2) $ 型张量.
 
 #### 若干定理
 
-1. 设 $ p\in M,\omega_b,\omega_b^\prime \in \mathscr{F}(0,1) $ 满足 $ \omega^{\prime}_b|_p=\omega_b|_p, $ 则有$$[(\tilde{\nabla}_a-\nabla_a)\omega_b^\prime]_p=[(\tilde{\nabla}_a-\nabla_a)\omega_b]_p,$$
+1. 设 $ p\in M,\omega_b,\omega_b^\prime \in \mathscr{F}(0,1) $ 满足 $ \omega^{\prime}_b|_p=\omega_b|_p, $ 则有 \$\$ [(\tilde{\nabla}_a-\nabla_a)\omega_b^\prime]_p=[(\tilde{\nabla}_a-\nabla_a)\omega_b]_p, \$\$ 
 其中 $ (\tilde{\nabla}_a-\nabla_a)\omega_b $ 是 $ \tilde{\nabla}_a\omega_b-\nabla_a\omega_b $ 的简写.
 
 > $ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p $ 只依赖于 $ \omega_b $ 在 $ p $ 点的值,这说明 $ (\tilde{\nabla}_a-\nabla_a) $ 是把 $ p $ 的对偶矢量 $ \omega_b|_p $ 变为 $ p $ 点的 $ (0,2) $ 型张量 $ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p $ 的线性映射.
 >
->> 所以在 $ p $ 点 $ (\tilde{\nabla}_a-\nabla_b) $ 对应于一个 $ (1,2) $ 型张量 $ C^c{}_{ab} $ ,满足$$[(\tilde{\nabla}_a-\nabla_a)\omega_b]_p=C^c{}_{ab}\omega_c|_p\Rightarrow\nabla_a\omega_b=\tilde{\nabla}_a\omega_b-C^c{}_{ab}\omega_c,\forall \omega_b \in \mathscr{F}(0,1).$$
+>> 所以在 $ p $ 点 $ (\tilde{\nabla}_a-\nabla_b) $ 对应于一个 $ (1,2) $ 型张量 $ C^c{}_{ab} $ ,满足 \$\$ [(\tilde{\nabla}_a-\nabla_a)\omega_b]_p=C^c{}_{ab}\omega_c|_p\Rightarrow\nabla_a\omega_b=\tilde{\nabla}_a\omega_b-C^c{}_{ab}\omega_c,\forall \omega_b \in \mathscr{F}(0,1). \$\$ 
 
 2.  $ \nabla_a $ 的无挠性将会导致张量 $ C^c{}_{ab} $ 具有如下的对称性 $ C^c{}_{ab}=C^c{}_{ba}. $ 
 
 3.   $ \nabla_a v^b=\tilde{\nabla}_a v^b+C^b{}_{ac}v^c,\forall v^b\in \mathscr{F}_M(1,0) $ .
 
-4. 一般地,对 $ \forall T\in \mathscr{F}_M(k,l) $ 有$$
+4. 一般地,对 $ \forall T\in \mathscr{F}_M(k,l) $ 有 \$\$ 
 \begin{aligned}
 \nabla_a T^{b_1\cdots b_k}{}_{c_1\cdots c_l}&=\tilde{\nabla}_a T^{b_1\cdots b_k}{}_{c_1\cdots c_l}+\sum\limits_i C^{b_i}{}_{ad}T^{b_1\cdots d\cdots b_k}{}_{c_1\cdots c_l}\\
 &-\sum\limits_i C^d{}_{ac_j}T^{b_1\cdots b_k}{}_{c_1\cdots d\cdots c_l}.
 \end{aligned}
-$$
+ \$\$ 
 
 > 上式表明,任意两个导数算符的差别仅仅体现在一个张量场 $ C^c{}_{ab} $ 上. 
 
 #### 普通导数算符
 
-设 $ \{x^\mu\} $ 是 $ M $ 的一个坐标系,其坐标基底和对偶基底分别是 $ \{\left(\frac{\partial}{\partial x^\mu}\right)^a\} $ 和 $ \{(d x^\mu)_a\} $ .在坐标域 $ O $ 上定义映射 $ \partial_a:\mathscr{F}_O(k,l)\to\mathscr{F}_O(k,l+1) $ 如下:$$\partial_aT^b{}_c:=(dx^\mu)_a(\frac{\partial}{\partial x^\nu})^b(dx^\sigma)_c\partial_\mu T^\nu{}_\sigma,$$其中 $ T^\nu{}_\sigma $ 是 $ T^b{}_c $ 在该坐标系下的分量, $ \partial_\mu $ 是对坐标 $ x^\mu $ 求偏导数的符号 $ \frac{\partial}{\partial x^\mu} $ 的简写.以上定义了一个依赖于坐标系,且只在该坐标系的坐标域上面有定义的导数算符,称为该坐标系的**普通导数算符**(ordinary derivative).
+设 $ \{x^\mu\} $ 是 $ M $ 的一个坐标系,其坐标基底和对偶基底分别是 $ \{\left(\frac{\partial}{\partial x^\mu}\right)^a\} $ 和 $ \{(d x^\mu)_a\} $ .在坐标域 $ O $ 上定义映射 $ \partial_a:\mathscr{F}_O(k,l)\to\mathscr{F}_O(k,l+1) $ 如下: \$\$ \partial_aT^b{}_c:=(dx^\mu)_a(\frac{\partial}{\partial x^\nu})^b(dx^\sigma)_c\partial_\mu T^\nu{}_\sigma, \$\$ 其中 $ T^\nu{}_\sigma $ 是 $ T^b{}_c $ 在该坐标系下的分量, $ \partial_\mu $ 是对坐标 $ x^\mu $ 求偏导数的符号 $ \frac{\partial}{\partial x^\mu} $ 的简写.以上定义了一个依赖于坐标系,且只在该坐标系的坐标域上面有定义的导数算符,称为该坐标系的**普通导数算符**(ordinary derivative).
 
 >  $ \partial_a $ 亦可以定义为:张量场 $ T^{b_1\cdots b_k}{}_{c_1\cdots c_l} $ 的普通导数 $ \partial_a T^{b_1\cdots b_k}{}_{c_1\cdots c_l} $ 的坐标分量等于该张量场的坐标分量对坐标的偏导数 $ \frac{\partial(T^{\nu_1\cdots \nu_k}{}_{\sigma_1\cdots \sigma_l})}{\partial x^\mu} $ .
 >
-> > - 任一坐标系的 $ \partial_a $ 作用于该系的任一坐标基矢和任一对偶坐标基矢结果都为零,即$$\partial_a(\frac{\partial}{\partial x^\nu})^b=0=\partial_a(dx^\nu)_b.$$
+> > - 任一坐标系的 $ \partial_a $ 作用于该系的任一坐标基矢和任一对偶坐标基矢结果都为零,即 \$\$ \partial_a(\frac{\partial}{\partial x^\nu})^b=0=\partial_a(dx^\nu)_b. \$\$ 
 > > -  $ \partial_a $ 满足导数算符定义中条件5强得多的条件,即
-$$\partial_a\partial_b T^{\cdots}{}_{\cdots}=\partial_b\partial_a T^{\cdots}{}_{\cdots},$$
+ \$\$ \partial_a\partial_b T^{\cdots}{}_{\cdots}=\partial_b\partial_a T^{\cdots}{}_{\cdots}, \$\$ 
 >其中 $ T^{\cdots}{}_{\cdots} $ 是任意型张量.  
 >- 称与坐标系无关的导数算符 $ \nabla_a $ 为**协变导数算符**(covariant derivative), $ \partial_a $ 则不在此列.
 
 #### 克氏符
 
-- 设 $ \partial_a $ 是 $ (M,\nabla_a) $ 上任给的坐标系的普通导数算符,则体现 $ \nabla_a $ 与 $ \partial_a $ 的差别的张量场 $ C^c{}_{ab} $ 称为 $ \nabla_a $ 在该坐标系的**克氏符**(Christoffel symbol),记作 $ \Gamma^c{}_{ab}, $ 即克氏符满足$$
+- 设 $ \partial_a $ 是 $ (M,\nabla_a) $ 上任给的坐标系的普通导数算符,则体现 $ \nabla_a $ 与 $ \partial_a $ 的差别的张量场 $ C^c{}_{ab} $ 称为 $ \nabla_a $ 在该坐标系的**克氏符**(Christoffel symbol),记作 $ \Gamma^c{}_{ab}, $ 即克氏符满足 \$\$ 
 \Gamma^c{}_{ab}\omega_c=\partial_a\omega_b-\nabla_a\omega_b,\forall\omega_b \in \mathscr{F}(0,1).
-$$
+ \$\$ 
 
 - 设 $ v^\mu{}_{;\mu} $ 是与坐标系无关的张量 $ \nabla_a v^b $ 在坐标系中的分量, $ v^\nu{}_{,\mu}\equiv\partial_\mu v^\nu\equiv\frac{\partial v^\nu}{\partial x^\mu}, $ 则有
-$$v^\nu{}_{;\mu}=v^\nu{}_{,\mu}+\Gamma^\nu{}_{\mu\sigma}v^\sigma,\omega_{\nu;\mu}=\omega_{\nu,\mu}-\Gamma^\sigma{}_{\mu\nu}\omega_\sigma,
-$$
+ \$\$ v^\nu{}_{;\mu}=v^\nu{}_{,\mu}+\Gamma^\nu{}_{\mu\sigma}v^\sigma,\omega_{\nu;\mu}=\omega_{\nu,\mu}-\Gamma^\sigma{}_{\mu\nu}\omega_\sigma,
+ \$\$ 
 其中 $ v^\nu,\omega_\nu $ 为任意矢量场和对偶矢量场在任一坐标基底的分量, $ \Gamma^\nu{}_{\mu\sigma} $ 是该系克氏符 $ \Gamma^b{}_{ac} $ 在该基底的分量. 
 
 -  $ [u,v]^a=u^b\nabla_b v^a-v^b\nabla_bu^a, $ 其中 $ \nabla_b $ 是任一无挠导数算符. 
@@ -755,9 +755,9 @@ $$
 > $ T^b\nabla_b v^a $ 是矢量场 $ v^a $ 沿 $ T^b $ 的导数,于是上述定义也可以理解为: $ v^a $ 沿着 $ C(t) $ 平移的充要条件是它沿着 $ T^b $ 的导数为零.
 
 - 设曲线 $ C(t) $ 位于坐标系 $ \{x^\mu\} $ 的坐标域内,曲线的参数式为 $ x^\mu(t) $ .令 $ T^a\equiv (\frac{\partial}{\partial t})^a $ ,则沿 $ C(t) $ 的矢量场 $ v^a $ 满足
-$$
+ \$\$ 
 T^b\nabla_b v^a=(\frac{\partial}{\partial x^\mu})^a(\frac{d\nu^\mu}{dt}+\Gamma^\mu{}_{\nu\sigma}T^\nu v^\sigma).
-$$
+ \$\$ 
 
 - 曲线上一点 $ C(t_0) $ 以及该点的一个矢量决定唯一的沿曲线平移的矢量场,
 
@@ -770,7 +770,7 @@ $$
 > 欧氏空间中与欧式度规 $ \delta_{ab} $ 相适配的导数算符只有一个,即笛卡尔坐标系 $ \{x^\mu\} $ 的普通导数算符 $ \partial_a, $ 亦是普通矢量场论中熟知的 $ \mathbf{\nabla} $ .
 
 - 设 $ \nabla_a $ 与 $ g_{bc} $ 相适配,则 $ \nabla_a $ 在该坐标系的克氏符 $ \Gamma^c{}_{ab} $ 在该系的分量 $ \Gamma^\sigma{}_{\mu\nu} $ 满足:
-$$\Gamma^\sigma{}_{\mu\nu}=\dfrac{1}{2}g^{\sigma\rho}(g_{\rho\mu,\nu}+g_{\nu\rho,\mu}-g_{\mu\nu,\rho}).$$
+ \$\$ \Gamma^\sigma{}_{\mu\nu}=\dfrac{1}{2}g^{\sigma\rho}(g_{\rho\mu,\nu}+g_{\nu\rho,\mu}-g_{\mu\nu,\rho}). \$\$ 
 
 >  $ \Gamma^\sigma{}_{\mu\nu} $ 既依赖于 $ M $ 上选定的 $ \nabla_a $ 又依赖于坐标系.
 
@@ -782,17 +782,17 @@ $$\Gamma^\sigma{}_{\mu\nu}=\dfrac{1}{2}g^{\sigma\rho}(g_{\rho\mu,\nu}+g_{\nu\rho
 - 欧氏空间中 $ p $ 点的矢量 $ \tilde{\mathbf{v}} $ 称为 $ q $ 点的矢量 $ \mathbf{v} $ **平移**至 $ p $ 点的结果,若两者在同一笛卡尔系的分量相等.
 
 - 欧氏空间中曲线 $ C(t) $ 上的矢量场 $ \mathbf{v} $ 沿线的导数 $ \dfrac{d\mathbf{v}}{dt} $ 定义为
-$$
+ \$\$ 
 \dfrac{d\mathbf{v}}{dt}:=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{\mathbf{v}}|_p-\mathbf{v}_p),\forall p\in C(t),
-$$
+ \$\$ 
 其中 $ \tilde{\mathbf{v}}|p $ 是把 $ \mathbf{v}|q $ ( $ q $ 为 $ p $ 在线上的邻点)平移至 $ p $ 点的结果, $ \Delta t\equiv t(q)-t(p). $ 
 
 > 将 $ T^b\nabla_b v^a $ 称为 $ v^a $ 沿着 $ T^b $ 的导数,有时记作 $ \dfrac{D v^a}{dt}\equiv T^b\nabla_b v^a. $ 
 
 - 设 $ v^a $ 是 $ (M,\nabla_a) $ 的曲线 $ C(t) $ 上的矢量场, $ T^b $ 是 $ C(t) $ 的切矢, $ p,q $ 是 $ C(t) $ 上的邻点
-$$
+ \$\$ 
 T^b\nabla_b v^a|_p=\lim_{\Delta t\to 0}\dfrac{1}{\Delta t}(\tilde{v}^a|_p-v^a|_p),
-$$
+ \$\$ 
 其中 $ \tilde{v}^a|_p $ 是 $ v^a|_q $ 沿 $ C(t) $ 平移至 $ p $ 点的结果, $ \Delta t\equiv t(q)-t(p). $ 
 
 ---
@@ -805,7 +805,7 @@ $$
 >欧氏(闵氏)空间中测地线方程的通解为 $ x^\mu(t)=a^\mu t+b^\mu,(a^\mu,b^\mu\text{为常数}) $ ,这是一条“直线”.
 
 - 设 $ \gamma(t) $ 为测地线,则其重参数化 $ \gamma^\prime(t^\prime)=\gamma(t) $ 的切矢 $ T^{\prime a} $ 满足
-$$T^{\prime b}\nabla_b T^{\prime a}=\alpha T^{\prime a},$$ 
+ \$\$ T^{\prime b}\nabla_b T^{\prime a}=\alpha T^{\prime a}, \$\$  
 其中 $ \alpha $ 为 $ \gamma(t) $ 上面某个函数.
 
 - 设曲线 $ \gamma(t) $ 的切矢 $ T^a $ 满足 $ T^b\nabla_b T^a=\alpha T^a $ ,则存在 $ t^\prime=t^\prime(t) $ 使得 $ \gamma^\prime(t^\prime)=\gamma(t) $ 为测地线,能够使得曲线成为测地线的参数叫做曲线的**仿射参数**(affine parameter).
@@ -841,17 +841,17 @@ $$T^{\prime b}\nabla_b T^{\prime a}=\alpha T^{\prime a},$$
 - 定理
  
  1. 设 $ f\in \mathscr{F},\omega_a\in \mathscr{F}(0,1) $ ,则有
- $$(\nabla_a\nabla_b-\nabla_b\nabla_a)(f\omega_c)=f(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c.$$
+  \$\$ (\nabla_a\nabla_b-\nabla_b\nabla_a)(f\omega_c)=f(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c. \$\$ 
  2. 设 $ \omega_c,\omega^\prime\in \mathscr{F}(0,1),\omega_c^\prime|_p=\omega_c|_p, $ 则有
- $$[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c^\prime]|_p=[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]|_p.$$ 
+  \$\$ [(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c^\prime]|_p=[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]|_p. \$\$  
 
 
 >
- $$(\nabla_a\nabla_b-\nabla_b\nabla_a):\underset{p\text{点的对偶矢量(0,1)}}{\underline{\omega_c|_p}}\xrightarrow{linear}\underset{p\text{点的(0,3)型张量}}{\underline{[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]|_p}}$$
+  \$\$ (\nabla_a\nabla_b-\nabla_b\nabla_a):\underset{p\text{点的对偶矢量(0,1)}}{\underline{\omega_c|_p}}\xrightarrow{linear}\underset{p\text{点的(0,3)型张量}}{\underline{[(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c]|_p}} \$\$ 
 >这表明 $ (\nabla_a\nabla_b-\nabla_b\nabla_a) $ 对应于一个(1,3)型张量.
 
 - 导数算符 $ \nabla_a $ 的**黎曼曲率张量场**(Riemann curvature tensor) $ R_{abc}{}^d $ 由下式定义:
-$$(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c=R_{abc}{}^d\omega_d,\forall \omega_c\in\mathscr{F}(0,1).$$
+ \$\$ (\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c=R_{abc}{}^d\omega_d,\forall \omega_c\in\mathscr{F}(0,1). \$\$ 
 
 > 黎曼张量场反映导数算符的非对异性,是描述 $ (M,\nabla_a) $ 的内禀性质的张量场,反映流形 $ M $ 在指定联络 $ \nabla_a $ 后的“内禀弯曲性”.
 >
@@ -862,11 +862,11 @@ $$(\nabla_a\nabla_b-\nabla_b\nabla_a)\omega_c=R_{abc}{}^d\omega_d,\forall \omega
 - 定理
 1.  $ (\nabla_a\nabla_b-\nabla_b\nabla_a)v^c=-R_{abc}{}^dv^d,\forall v^c\in\mathscr{F}(1,0). $ 
 2.  $ \forall T^{c_1\cdots c_k}{}_{d_1\cdots d_l}\in \mathscr{F}(k,l) $ ,有
-$$
+ \$\$ 
 \begin{aligned}
 (\nabla_a\nabla_b&-\nabla_b\nabla_a)T^{c_1\cdots c_k}{}_{d_1\cdots d_l}\\&=-\sum\limits_{i=1}^kR_{abe}{}^{c_i}T^{c_1\cdots e\cdots c_k}{}_{d_1\cdots d_l}\\&+\sum\limits_{j=1}^lR_{abd_j}{}^{e}T^{c_1\cdots  c_k}{}_{d_1\cdots e\cdots d_l}
 \end{aligned}
-$$
+ \$\$ 
 
 - 黎曼曲率张量满足的性质:
 1.  $ R_{abc}{}^d=-R_{bac}{}^d $ ;
@@ -878,8 +878,8 @@ $$
  $ g^{ac}R_{ac} :=R $ 称为**标量曲率**(scalar curvature).
 
 - 对于维数 $ n \geqslant 3 $ 的广义黎曼空间,**外尔张量**(Weyl tensor) $ C_{abcd} $ 定义为
-$$
-C_{abcd}:=R_{abcd}-\dfrac{2}{n-2}(g_{a[c}R_{d]b}-g_{b[c}R_{d]a}) +\dfrac{2}{(n-1)(n-2)}R g_{a[c}g_{d]b}.$$ 
+ \$\$ 
+C_{abcd}:=R_{abcd}-\dfrac{2}{n-2}(g_{a[c}R_{d]b}-g_{b[c}R_{d]a}) +\dfrac{2}{(n-1)(n-2)}R g_{a[c}g_{d]b}. \$\$  
 
 外尔张量具有如下性质:
 
@@ -890,19 +890,19 @@ C_{abcd}:=R_{abcd}-\dfrac{2}{n-2}(g_{a[c}R_{d]b}-g_{b[c}R_{d]a}) +\dfrac{2}{(n-1
 3.  $ C_{abcd} $ 的各种迹为零,即 $ g^{ac}C_{abcd}=0. $ 
 
 - 广义黎曼空间的**爱因斯坦张量** $ G_{ab} $ 由下式定义:
-$$G_{ab}:=R_{ab}-\dfrac{1}{2}Rg_{ab},$$
+ \$\$ G_{ab}:=R_{ab}-\dfrac{1}{2}Rg_{ab}, \$\$ 
 爱因斯坦张量满足
-$$\nabla^a G_{ab}\equiv g^{ac}\nabla_cG_{ab}=0.$$
+ \$\$ \nabla^a G_{ab}\equiv g^{ac}\nabla_cG_{ab}=0. \$\$ 
 
 #### 由度规计算黎曼曲率
 
-1.任选坐标系后,度规分量 $ g_{\mu\nu} $ 便是已知量. 根据式$$\Gamma^\sigma{}_{\mu\nu}=\dfrac{1}{2}g^{\sigma\rho}(g_{\rho\mu,\nu}+g_{\nu\rho,\mu}-g_{\mu\nu,\rho}),$$
+1.任选坐标系后,度规分量 $ g_{\mu\nu} $ 便是已知量. 根据式 \$\$ \Gamma^\sigma{}_{\mu\nu}=\dfrac{1}{2}g^{\sigma\rho}(g_{\rho\mu,\nu}+g_{\nu\rho,\mu}-g_{\mu\nu,\rho}), \$\$ 
 从已知的 $ g_{\mu\nu} $ 求出所有的非零 $ \Gamma^\sigma{}_{\mu\nu} $ ;
 
 2. 代入下式得到黎曼张量的坐标分量:
-$$R_{\mu\nu\sigma}{}^\rho=\Gamma^\rho{}_{\mu\sigma,\nu}-\Gamma^\rho{}_{\nu\sigma,\mu}+\Gamma^\lambda{}_{\sigma\mu}\Gamma^{\rho}{}_{\nu\lambda}-\Gamma^\lambda{}_{\sigma\nu}\Gamma^{\rho}{}_{\mu\lambda}.$$ 
+ \$\$ R_{\mu\nu\sigma}{}^\rho=\Gamma^\rho{}_{\mu\sigma,\nu}-\Gamma^\rho{}_{\nu\sigma,\mu}+\Gamma^\lambda{}_{\sigma\mu}\Gamma^{\rho}{}_{\nu\lambda}-\Gamma^\lambda{}_{\sigma\nu}\Gamma^{\rho}{}_{\mu\lambda}. \$\$  
 3. 代入下式得到里奇张量的坐标分量:
-$$R_{\mu\sigma}=R_{\mu\nu\sigma}{}^\nu=\Gamma^\nu{}_{\mu\sigma,\nu}-\Gamma^\nu{}_{\nu\sigma,\mu}+\Gamma^\lambda{}_{\mu\sigma}\Gamma^{\nu}{}_{\lambda\nu}-\Gamma^\lambda{}_{\nu\sigma}\Gamma^{\nu}{}_{\lambda\mu}.$$ 
+ \$\$ R_{\mu\sigma}=R_{\mu\nu\sigma}{}^\nu=\Gamma^\nu{}_{\mu\sigma,\nu}-\Gamma^\nu{}_{\nu\sigma,\mu}+\Gamma^\lambda{}_{\mu\sigma}\Gamma^{\nu}{}_{\lambda\nu}-\Gamma^\lambda{}_{\nu\sigma}\Gamma^{\nu}{}_{\lambda\mu}. \$\$  
 
 ---
 
@@ -925,12 +925,12 @@ $$R_{\mu\sigma}=R_{\mu\nu\sigma}{}^\nu=\Gamma^\nu{}_{\mu\sigma,\nu}-\Gamma^\nu{}
 - 设 $ M,N $ 为流形, $ \phi:M\to N $ 为光滑映射, $ \mathscr{F}_M,\mathscr{F}_N $ 分别代表 $ M,N $ 上光滑函数的集合, $ \mathscr{F}_M(k,l) $ 与 $ \mathscr{F}_N(k,l) $ 分别代表 $ M,N $ 上光滑 $ (k,l) $ 型张量场的集合.
 
 1. **拉回映射**(pull back): $ \phi^*:\mathscr{F}_N\to\mathscr{F}_M $ 定义为
-$$(\phi^*f)|_p:=f|_{\phi(p)},\forall f \in \mathscr{F}_N,p\in M,$$即 $ \phi^*f=f\circ \phi $ .
+ \$\$ (\phi^*f)|_p:=f|_{\phi(p)},\forall f \in \mathscr{F}_N,p\in M, \$\$ 即 $ \phi^*f=f\circ \phi $ .
 
 > $ \phi^*:\mathscr{F}_N\to\mathscr{F}_M $ 是线性映射,且有 $ \phi^* (fg)=\phi^*(f) \phi^*(g),\forall f,g \in\mathscr{F}_N. $ 
 
 2.  $ \forall p\in M, $ 定义**推前映射**(push forward) $ \phi_{*}:V_p\to V_{\phi(p)} $ 如下: $ \forall v^a\in V_p, $  定义其像    $ \phi_{*}v^a\in V_{\phi(p)} $ 为
- $$(\phi_*v)(f):=v(\phi^*f),\forall f \in \mathscr{F}_N.$$
+  \$\$ (\phi_*v)(f):=v(\phi^*f),\forall f \in \mathscr{F}_N. \$\$ 
 
 >  $ \phi_* v^a $ 是 $ \phi(p) $ 点的矢量,也称为 $ \phi $ 的**切映射**.
 
@@ -942,29 +942,29 @@ $$(\phi^*f)|_p:=f|_{\phi(p)},\forall f \in \mathscr{F}_N,p\in M,$$即 $ \phi^*f=
 
 1. 拉回映射可以按照如下方式延拓至 $ \phi^*:\mathscr{F}_N(0,l)\to\mathscr{F}_M(0,l) $ :
  $ \forall T\in\mathscr{F}_N(0,l), $ 定义
-$$\begin{aligned}
+ \$\$ \begin{aligned}
 (\phi^*T)&_{a_1\cdots a_l}|_p(v_1)^{a_1}\cdots(v_l)^{a_l}
 \\&:=T_{a_1\cdots a_l}|_{\phi(p)}(\phi_*v_1)^{a_1}\cdots(\phi_*v_l)^{a_l},\\
 &\forall p \in M,v_1,\cdots,v_l\in V_p.
-\end{aligned}$$  
+\end{aligned} \$\$   
 
 > 拉回映射 $ \phi^* $ 能把 $ N $ 上的 $ (0,l) $ 型张量场变为 $ M $ 上的同型张量场,是场到场的映射.
 
 2.  $ \forall p \in M, $ 推前映射 $ \phi_* $ 可以按如下方式延拓至 $ \phi_*:\mathscr{F}_{V_p}(k,0)\to \mathscr{F}_{V_{\phi(p)}}(k,0) $ ,即 $ \phi_* $ 是把 $ p $ 点的 $ (k,0) $ 型张量变为 $ \phi(p) $ 点的同型张量的映射: $ \forall T\in \mathscr{F}_{V_p}(k,0), $ 其像 $ \phi_*T\in\mathscr{F}_{V_{\phi(p)}}(k,0) $ 由下式定义:
-$$
+ \$\$ 
 \begin{aligned}
 &(\phi_*T)^{a_1\dots a_k}(\omega^1)_{a_1}\cdots (\omega^k)_{a_k}\\
 &:=T^{a_1\dots a_k}(\phi^*\omega^1)_{a_1}\cdots (\phi^*\omega^k)_{a_k},\\
 &\forall \omega^1,\cdots,\omega^k\in V^*_{\phi(p)},
 \end{aligned}
-$$
+ \$\$ 
 其中 $ (\phi^*\omega )_a $ 定义为 $ (\phi^* \omega)_a v^a:=\omega_a(\phi_*v)^a,\forall v^a \in V_p $ .
 
 > 推前映射 $ \phi_* $ 只把 $ M $ 中一点 $ p $ 的 $ (k,0) $ 型张量变为其像点 $ \phi(p) $ 的同型张量.
 
 **微分同胚映射 $ \phi:M\to N $ 存在两种观点:**
 
-1. **主动观点**:认为 $ \phi $ 是点的变换以及由此导致的张量变换,即$$p\to\phi(p);T_p\to \phi_{*}T_{\phi(p)};$$
+1. **主动观点**:认为 $ \phi $ 是点的变换以及由此导致的张量变换,即 \$\$ p\to\phi(p);T_p\to \phi_{*}T_{\phi(p)}; \$\$ 
 2. **被动观点**,认为点 $ p $ 以及其上的所有张量 $ T $ 都没变, $ \phi:M\to N $ 的后果是坐标系有了变换,从 $ \{x^\mu\} $ 变为 $ \{x^{\prime\mu}\}. $  
 
 -  $ (\phi_*^T)^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}|_{\phi(p)}=T^{\prime\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}|_p,\forall T\in\mathscr{F}_M(k,l), $ 式中左边是新点 $ \phi(p) $ 的新张量 $ \phi_*T $ 在老坐标系 $ \{y^\mu\} $ 的分量,右边是老点 $ p $ 的老张量 $ T $ 在新坐标系 $ \{ x^{\prime \mu}\} $ 
@@ -993,21 +993,21 @@ $$
 
 - 定理:
 1. 张量场 $ T^{a_1\cdots a_k}{}_{b_1\cdots b_l} $ 沿 $ v^a $ 的李导数在 $ v^a $ 的适配坐标系的分量
-  $$(\mathscr{L}_vT)^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial T^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}}{\partial x^1}.$$
+   \$\$ (\mathscr{L}_vT)^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}=\dfrac{\partial T^{\mu_1\cdots\mu_k}{}_{\nu_1\cdots\nu_l}}{\partial x^1}. \$\$ 
 
   > 上式左边在坐标变换时满足张量变换律而右边则否,故不能改写为张量等式.
  
-2. $$\mathscr{L}_vu^a=[v,u]^a=v^b\nabla_bu^a-u^b\nabla_bv^a,\forall u^a,v^a\in\mathscr{F}(1,0),$$其中 $ \nabla_a $ 为任一无挠导数算符.
-3. $$\mathscr{L}_v\omega_a=v^b\nabla_b\omega_a+\omega_b\nabla_av^b,\forall v^a\in\mathscr{F}(1,0),\omega_a\in\mathscr{F}(0,1),$$其中 $ \nabla_a $ 为任一无挠导数算符.
+2.  \$\$ \mathscr{L}_vu^a=[v,u]^a=v^b\nabla_bu^a-u^b\nabla_bv^a,\forall u^a,v^a\in\mathscr{F}(1,0), \$\$ 其中 $ \nabla_a $ 为任一无挠导数算符.
+3.  \$\$ \mathscr{L}_v\omega_a=v^b\nabla_b\omega_a+\omega_b\nabla_av^b,\forall v^a\in\mathscr{F}(1,0),\omega_a\in\mathscr{F}(0,1), \$\$ 其中 $ \nabla_a $ 为任一无挠导数算符.
 
-4.$$
+4. \$\$ 
 \begin{aligned}
 \mathscr{L}_vT^{a_1\cdots a_k}{}_{b_1\cdots b_l}&=v^c\nabla_cT^{a_1\cdots a_k}{}_{b_1\cdots b_l}\\
 &-\sum\limits_{i=1}^kT^{a_1\cdots c \cdots a_k}{}_{b_1\cdots b_l}\nabla_c v^{a_i}\\
 &+\sum\limits_{j=1}^lT^{a_1 \cdots a_k}{}_{b_1\cdots c\cdots b_l}\nabla_{b_j} v^{c}
 ,
 \end{aligned}
-$$
+ \$\$ 
  $ \forall T\in\mathscr{F}(k,l),v \in \mathscr{F}(1,0),\nabla_a $ 为任一导数算符.
 
 ---
@@ -1022,7 +1022,7 @@ $$
 #### Killing场
 
 - 定义:\
- $ \xi^a $ 为Killing矢量场的充要条件是 $ \xi^a $ 满足如下的Killing方程:$$\nabla_a\xi_b+\nabla_b\xi_a=0,$$
+ $ \xi^a $ 为Killing矢量场的充要条件是 $ \xi^a $ 满足如下的Killing方程: \$\$ \nabla_a\xi_b+\nabla_b\xi_a=0, \$\$ 
   或者 $ \nabla_{(a}\xi_{b)}=0 $ 或者 $ \nabla_a\xi_b=\nabla_{[a}\xi_{b]} $ ,其中 $ \nabla_a $ 满足 $ \nabla_ag_{bc}=0 $ .
 
 - 定理:
