@@ -105,7 +105,7 @@ $$ X\times Y:=\{(x,y) \mid x\in X,y\in Y\}. $$
 
 > 映射的定义只要求 $ \forall x\in X,x\mapsto y\in Y $ 必须唯一,而无论到底是“一对一”还是“多对一”,也不论 $ Y $ 中是不是有元素剩余.于是可以继续对映射加以限制从而进一步分类.
 > 
-> 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),北京大学丘维生教授在国内首先将其译作“培域”.显然, 
+> 集合 $ Y $称为[Codomain](https://zh.wikipedia.org/wiki/%E5%88%B0%E8%BE%BE%E5%9F%9F),北京大学丘维生教授在国内首先将其译作“陪域”.显然, 
 $f[x] \subset Y .$
 {: .prompt-warning }
 
@@ -116,27 +116,29 @@ $f[x] \subset Y .$
 
 - 映射的分类
   - 映射 $ f:X\to Y $ 称为**一一的**(one-to-one),若 $ \forall y \in Y $ ,有不多于一个逆像,可以一个也没有. 
-    - 若 $ f $ 为一一映射,则存在逆映射 $ f^{-1}: f[X] \to X $ .无论 $ f:X\to Y $ 是否有逆,都可以定义任一子集 $ B \subset Y $ 在 $ f $ 下的逆像 $ f^{-1}[B] $ 为: $$ f^{-1}[B]:=\{x\in X \mid f(x)\in B\}\subset X. $$ 这里的逆像是 $ X $ 的子集而非元素.
+ 
+ 若 $ f $ 为一一映射,则存在逆映射 $ f^{-1}: f[X] \to X $ .无论 $ f:X\to Y $ 是否有逆,都可以定义任一子集 $ B \subset Y $ 在 $ f $ 下的逆像 $ f^{-1}[B] $ 为: $$ f^{-1}[B]:=\{x\in X \mid f(x)\in B\}\subset X. $$ 这里的逆像是 $ X $ 的子集而非元素.
   - 映射 $ f:X\to Y $ 称为**到上的**(onto),若 $ \forall y \in Y $ ,都有逆像,可以多于一个. $ f $ 为到上映射的充要条件是值域 $ f[X]=Y $ .
-  - 既是一一映射,又是到上映射,则称为一一到上的映射,数学上称为双射或者一一对应.
+  - 既是一一映射,又是到上映射,则称为一一到上的映射.
   - $ f:X\to Y $ 称为常值映射,若 $ \forall x,x'\in X,f(x)=f(x') $ .
   - 设 $ X,Y,Z $ 为集合, $ f:X\to Y,g:Y\to Z $ 为映射,则 $ f $ 和 $ g $ 的复合映射 $ g\circ f $ 是从 $ X $ 到 $ Z $ 的映射,定义为 
   $$ (g \circ f)(x):=g(f(x))\in Z,\forall x \in X $$ .
 
-> 一一映射亦即排除了“多对一”的映射,数学书称其为单射.而到上映射数学上则称为满射.
+> 一一映射亦即排除了“多对一”的映射,数学书称其为单射.而到上映射排除了$Y$中元素剩余的情况,数学书上则称为满射.一一到上的映射保证了“一个萝卜一个坑”,在数学上称为双射或者一一对应.
 {: .prompt-warning }
 
 #### 一元函数 $ f:\mathbb{R}\to \mathbb{R} $ 连续性的定义
 
 - 微积分采用 $ \varepsilon-\delta $ 语言定义,即
-
-称 $ f $ 在 $ x $ 点连续,若 $ \forall \varepsilon > 0,\exists \delta >0 $ 使得当 $  \mid  x'-x \mid  <\delta $ 时有 $  \mid f(x')-f(x) \mid <\varepsilon $ .
-
-称 $ f $ 在 $ \mathbb{R} $ 上是连续的,若它在 $ \mathbb{R} $ 的任一点连续.
+  - 称 $ f $ 在 $ x $ 点连续,若 $ \forall \varepsilon > 0,\exists \delta >0 $ 使得当 $  \mid  x'-x \mid  <\delta $ 时有 $  \mid f(x')-f(x) \mid <\varepsilon $ .
+  - 称 $ f $ 在 $ \mathbb{R} $ 上是连续的,若它在 $ \mathbb{R} $ 的任一点连续.
 
 - 点集拓扑采用开子集定义,即
 
 设 $ X=Y=\mathbb{R} $ ,映射 $ f:X\to Y $ 叫做连续的,若 $ Y $ 中任意开区间的“逆像”都是 $ X $ 的开区间之并或是空集. 
+
+>为什么会存在开子集定义?
+{: .prompt-warning }
 
 #### 开子集
  $ \mathbb{R} $ 的任一可以表示为开区间之并的子集(连同空集)称为开子集.开子集的本质性质有
