@@ -35,9 +35,9 @@ description: This article records the content of differential geometry from the 
 若 $ A\subset X,X\subset A, $ 则 $ A=X $ ,称为集合相等.
 
 #### 集合的运算
-1. 并集(union): $ A \cup B := \{x | x \in  A \text{或} x \in B \}. $ 
-2. 交集(intersection): $ A \cap B:= \{x |x \in A,x \in B \}. $ 
-3. 差集(difference): $ A-B:= \{ x |x \in A,x \notin B \}. $ 
+1. 并集(union): $ A \cup B := \{x \mid x \in  A \text{或} x \in B \}. $ 
+2. 交集(intersection): $ A \cap B:= \{x \mid x \in A,x \in B \}. $ 
+3. 差集(difference): $ A-B:= \{ x \mid x \in A,x \notin B \}. $ 
 4. 补集(complement):若 $ A \subset X $ ,则补集 $ -A:=X-A. $ 
    
 #### 集合满足的运算律
