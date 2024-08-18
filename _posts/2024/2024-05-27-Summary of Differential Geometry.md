@@ -177,29 +177,27 @@ $f[x] \subset Y .$
 
 定义了拓扑结构的集合 $ X $ 的全体开子集组成一个集合,称为 $ X $ 的一个**拓扑**(topology),记作 $ \mathscr{T} $ .
 
-- 用数学语言表述为:非空集合 $ X $ 的一个拓扑 $ \mathscr{T} $ 是 $ X $ 的若干子集的集合,满足:
+- 拓扑用数学语言表述为:非空集合 $ X $ 的一个拓扑 $ \mathscr{T} $ 是 $ X $ 的若干子集的集合,满足:
 1.  $ X,\emptyset \in \mathscr{T}; . $ 
 2. 若 $ O_i\in \mathscr{T},i=1,\cdots,n $ ,则 $ \bigcap\limits_{i=1}^n O_i\in \mathscr{T}. $ 
 3. 若 $ \forall \alpha,O_\alpha \in \mathscr{T} $ ,则 $ \bigcup\limits_{\alpha}O_\alpha\in \mathscr{T}. $ 
+
 指定了拓扑 $ \mathscr{T} $ 的集合 $ X $ 称为**拓扑空间**,拓扑空间的子集 $ O $ 称为开子集或者开集,若 $ O\in \mathscr{T} $ .
 
 #### 常见拓扑
 1. 设 $ X $ 为任意非空集合,令 $ \mathscr{T} $ 为 $ X $ 的全部子集的集合,则 $ \mathscr{T} $ 构成 $ X $ 的一个拓扑, 称为**离散拓扑**(discrete topology).
 2. 设 $ X $ 为任意非空集合,令 $ \mathscr{T}=\{X,\emptyset\} $ ,则 $ \mathscr{T} $ 构成 $ X $ 的一个拓扑, 称为**凝聚拓扑**(indiscrete topology).
 3. 设 $ X=\mathbb{R} $ ,则 $$ \mathscr{T}_u:=\{\text{空集或者}\mathbb{R}\text{中能够表示为开区间之并的子集}\} $$ 称为 $ \mathbb{R} $ 的**通常拓扑**.
-  设 $ X=\mathbb{R}^n $ ,则 $ \mathscr{T}_u:=\{\text{空集或者}\mathbb{R}^n\text{中能够表示为开球之并的子集}\} $ 称为 $ \mathbb{R}^n $ 的**通常拓扑**.
-  
-  > 其中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.\
-  >  $ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
-  
+设 $ X=\mathbb{R}^n $ ,则 $ \mathscr{T}_u:=\{\text{空集或者}\mathbb{R}^n\text{中能够表示为开球之并的子集}\} $ 称为 $ \mathbb{R}^n $ 的**通常拓扑**.
 4. 设 $ (X_1,\mathscr{T}_1) $ 和 $ (X_2,\mathscr{T}_2) $ 为拓扑空间, $ X=X_1\times X_2 $ ,定义 $ X $ 的拓扑为 $$ \mathscr{T}:=\{O\subset X \mid O\text{可以表示为形如}O_1\times O_2\text{的子集之并},O_1 \in\mathscr{T}_1,O_2\in \mathscr{T}_2\} $$ 则 $ \mathscr{T} $ 称为 $ X $ 的**乘积拓扑**(product topology).
 5. 设 $ (X,\mathscr{T}) $ 是拓扑空间, $ A $ 为 $ X $ 的任一非空子集.把 $ A $ 看成集合,指定拓扑 $ \mathscr{S} $ 为 
   \[ \mathscr{S}:=\{V\subset A \mid \exists\ O\in \mathscr{T}s.t.V=A\cap O\}, \]
 这样定义的 $ \mathscr{S} $ 叫做 $ A\subset X $ 的、由 $ \mathscr{T} $ 导出的**诱导拓扑**(induced topology).  $ (A,\mathscr{S}) $ 称为 $ (X,\mathscr{T}) $ 的**拓扑子空间(topological subspace)**.
 
+>  $ \mathbb{R}^n $ 的通常拓扑中,开球(open ball)定义为 $ B(x_0,r):=\{x\in \mathbb{R}^n \mid  \mid x-x_0 \mid <r\} $ , $ x_0 $ 称为球心, $ r>0 $ 称为半径.$ \mathbb{R}^2 $ 中的开球称为开圆盘, $ \mathbb{R} $ 中的开球就是开区间.
 >
-![](诱导拓扑.jpg)\
-如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0 \mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
+> <img src="https://metricfield.github.io/assets/img/in-post/2024/2024-05-27.png" alt="诱导拓扑的一个简单例子">
+> 如上图所示,设 $ A:=\{x\in\mathbb{R}^2 \mid   \mid x-x_0 \mid =1\} $ ,由于 $ A $ 仅仅是圆周无法表示为 $ \mathbb{R}^2 $ 中的开圆盘之并,所以 $ A $ 以 $ \mathbb{R}^2 $ 的 $ \mathscr{T}_u $ 衡量不是开的.然而按照上面定义的 $ \mathscr{S} $ , $ A $ 却是开的.
 
 >显然,离散拓扑元素最多，而凝聚拓扑元素最少.
 
