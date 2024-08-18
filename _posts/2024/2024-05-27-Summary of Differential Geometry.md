@@ -8,7 +8,7 @@ math: True
 description: This article records the content of differential geometry from the first five chapters of Professor Liang Canbin's 'Introduction to Differential Geometry and General Relativity, Volume I'.
 ---
 
-> 部分公式可能没有渲染出来.
+> 很遗憾,并非所有的公式都完整渲染出来了.但好在我们有教材.
 {: .prompt-warning}
 
 >  2024.5.27(实际上更早)-2024.7.6
