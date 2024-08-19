@@ -203,57 +203,54 @@ $f[x] \subset Y .$
 
 #### 连续
 
-设 $ (X,\mathscr{T}) $ 和 $ (Y,\mathscr{S}) $ 为拓扑空间,映射 $ f:X\to Y $ 称为**连续的(continuous)**,若 $ f^{-1}[O]\in \mathscr{T},\forall O \in \mathscr{S}. $ 
+- 设 $ (X,\mathscr{T}) $ 和 $ (Y,\mathscr{S}) $ 为拓扑空间,映射 $ f:X\to Y $ 称为**连续的**(continuous),若 $ f^{-1}[O]\in \mathscr{T},\forall O \in \mathscr{S}. $ 
 
-设 $ (X,\mathscr{T}) $ 和 $ (Y,\mathscr{S}) $ 为拓扑空间,映射 $ f:X\to Y $ 称为在点 $ x\in X $ 处连续,若 $ \forall $ 满足 $ f(x)\in G' $ 的 $ G'\in \mathscr{S},\exists\ G\in \mathscr{T} $ 使得 $ x\in G $ 且 $ f[G]\subset G'. $  
+- 设 $ (X,\mathscr{T}) $ 和 $ (Y,\mathscr{S}) $ 为拓扑空间,映射 $ f:X\to Y $ 称为在点 $ x\in X $ 处连续,若 $ \forall $ 满足 $ f(x)\in G' $ 的 $ G'\in \mathscr{S},\exists\ G\in \mathscr{T} $ 使得 $ x\in G $ 且 $ f[G]\subset G'. $  
 
- $ f:X\to Y $ 称为**连续**，若它在所有点 $ x=X $ 上连续.
+- $ f:X\to Y $ 称为**连续**，若它在所有点 $ x=X $ 上连续.
 
 #### 同胚
 
-拓扑空间 $ (X,\mathscr{T}) $ 和 $ (Y,\mathscr{S}) $ 称为**互相同胚(homeomorphic to each other)**,若存在映射 $ f:X\to Y $ 满足
+- 拓扑空间 $ (X,\mathscr{T}) $ 和 $ (Y,\mathscr{S}) $ 称为**互相同胚**(homeomorphic to each other),若存在映射 $ f:X\to Y $ 满足
 
 1.  $ f $ 是一一到上的;
 2.  $ f $ 和 $ f^{-1} $ 都连续.
 
-这样的 $ f $ 称为从 $ (X,\mathscr{T}) $ 到 $ (Y,\mathscr{S}) $ 的**同胚映射**,简称**同胚(homeomorphism)**.
+这样的 $ f $ 称为从 $ (X,\mathscr{T}) $ 到 $ (Y,\mathscr{S}) $ 的**同胚映射**,简称**同胚**(homeomorphism).
 
->普通函数的连续性与可微性可以用 $ C^r $ 表示, $ r $ 为非负整数:
-> 
-  >>  $ C^0 $ 表示连续;\
-  >>  $ C^r $ 表示 $ r $ 阶导函数存在且连续;\
-  >>  $ C^\infty $ 表示任意阶导函数存在且连续,称为光滑.
+- 普通函数的连续性与可微性可以用 $ C^r $ 表示, $ r $ 为非负整数:
 
-> 同胚映射 $ f:X\to Y $ 不仅在 $ X $ 和 $ Y $ 的点之间建立了一一对应关系,而且还在 $ X $ 的开子集与 $ Y $ 的开子集之间建立了一一对应关系.一切由拓扑决定的性质都可被 $ f $ 携带到 $ Y $ 中.
+1. $ C^0 $ 表示连续;
+2. $ C^r $ 表示 $ r $ 阶导函数存在且连续;
+3. $ C^\infty $ 表示任意阶导函数存在且连续,称为光滑.
 
->任一开区间 $ (a,b)\subset\mathbb{R} $ 与 $ \mathbb{R} $ 同胚.
+- 任一开区间 $ (a,b)\subset\mathbb{R} $ 与 $ \mathbb{R} $ 同胚.
+  
+> 同胚映射 $ f:X\to Y $ 不仅在 $ X $ 和 $ Y $ 的点之间建立了一一对应关系,而且还在 $ X $ 的开子集与 $ Y $ 的开子集之间建立了一一对应关系.一切由拓扑决定的性质都可被 $ f $ 携带到 $ Y $ 中. 
+{: .prompt-info }
 
 #### 邻域、闭集、连通
 
-集合 $ X $ 中一点 $ x $ 的**邻域(neighborhood)** $ N $ 是 $ X $ 的子集合,它含有点 $ x $ 所属的某开集 $ O $ ,即 $ \exists O \in \mathscr{T} $ 使得 $ x\in O\subset N $ .
+- 集合 $ X $ 中一点 $ x $ 的**邻域**(neighborhood) $ N $ 是 $ X $ 的子集合,它含有点 $ x $ 所属的某开集 $ O $ ,即 $ \exists O \in \mathscr{T} $ 使得 $ x\in O\subset N $ .
 
->定义中并未要求 $ N $ 自身是开集,但是所有含 $ x $ 的开集都是 $ x $ 的邻域.自身为开集的邻域称为开邻域.
->在拓扑空间 $ [0,\infty)\subset \mathbb{R} $ 中 $ [0,1) $ 是0的开邻域, $ [0,1] $ 是0的邻域.\
-> 
- >>这是因为
+> - 定义中并未要求 $ N $ 自身是开集,但是所有含 $ x $ 的开集都是 $ x $ 的邻域.自身为开集的邻域称为开邻域.
+> - 在拓扑空间 $ [0,\infty)\subset \mathbb{R} $ 中 $ [0,1) $ 是0的开邻域, $ [0,1] $ 是0的邻域.
+{: .prompt-info }
 
-子集的邻域:
+- 子集的邻域:
+  - $ N\subset X $ 称为 $ A\subset X $ 的一个邻域,若 $ \exists \  O \in \mathscr{T} $ 使得 $ A\subset O\subset N $ .
+  - $ A\subset X $ 是开集,当且仅当 $ \forall x\in A,A $ 是 $ x $ 的邻域.
+  - $ C\subset X $ 叫做**闭集(closed set)**,若 $ -C\in \mathscr{T} $ .闭集具有如下性质:
+    1. 任意两个闭集的交集是闭集;
+    2. 有限个闭集的并集是闭集;
+    3.  $ X $ 和 $ \emptyset $ 是闭集. 
 
- $ N\subset X $ 称为 $ A\subset X $ 的一个邻域,若 $ \exists \  O \in \mathscr{T} $ 使得 $ A\subset O\subset N $ .
+- 设 $ O $ 是 $ X $ 的子集,点 $ x $ 的每个邻域若含有 $ O-\{x\} $ 中至少一点,则 $ x\in X $ 称为 $ O $ 的极限点或者聚点.
 
- $ A\subset X $ 是开集,当且仅当 $ \forall x\in A,A $ 是 $ x $ 的邻域.
-
- $ C\subset X $ 叫做**闭集(closed set)**,若 $ -C\in \mathscr{T} $ .闭集具有如下性质:
-
-1. 任意两个闭集的交集是闭集;
-2. 有限个闭集的并集是闭集;
-3.  $ X $ 和 $ \emptyset $ 是闭集. 
-
-设 $ O $ 是 $ X $ 的子集,点 $ x $ 的每个邻域若含有 $ O-\{x\} $ 中至少一点,则 $ x\in X $ 称为 $ O $ 的极限点或者聚点.
-
->  $ O $ 的极限点 $ x $ 不一定属于 $ O $ .闭集包含它的所有极限点(聚点).
-
-拓扑空间 $ (X,\mathscr{T}) $ 称为**连通的(connected)**,若它除 $ X $ 和 $ \emptyset $ 以外没有既开又闭的子集. 
+> - $ O $ 的极限点 $ x $ 不一定属于 $ O $ .
+> - 闭集包含它的所有极限点(聚点).
+{: .prompt-info }
+- 拓扑空间 $ (X,\mathscr{T}) $ 称为**连通的(connected)**,若它除 $ X $ 和 $ \emptyset $ 以外没有既开又闭的子集. 
 
 #### 闭包、内部和边界
 
